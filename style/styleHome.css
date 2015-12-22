@@ -1,0 +1,904 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+
+html{
+	overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: rgba(28, 54, 83, 0.6);
+  -webkit-text-size-adjust: 100%; 
+  overflow-x: hidden;
+}
+
+
+p {
+  font-size: 15px;
+  line-height: 29px;
+  color: rgba(28, 54, 83, 0.6);
+  color: rgba(0,0,0, 0.7);
+  padding-bottom: 20px; 
+}
+
+h1 {
+  font-size: 60px; 
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 300;
+  color: #3D4351; 
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #3D4351; 
+  font-weight: 100;
+}
+
+h4 {
+  font-size: 18px; 
+}
+
+h5 {
+  font-size: 15px;
+  color: #3D4351;
+  text-transform: uppercase;
+  font-weight: 500; 
+}
+
+.butn {
+  font-size: 13px;
+  font-weight: 500;
+  border: solid 2px #ff5174;
+  border-radius: 40px;
+  color: #ff5174;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 8px 40px; 
+  transition: background-color .3s; 
+}
+
+.butn:hover, .butn:focus {
+  color: #fff;
+  border-color: #FF5274;
+  font-weight: 500;
+  background-color: #FF5274;
+  text-decoration: none;
+  cursor:pointer; }
+
+section{
+	padding-top: 100px;
+	padding-bottom: 100px;
+	width: 100%;
+}
+
+div.extraPadding{
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+}
+
+
+
+
+
+/************ Hero SECTION *************/
+
+#hero{
+	height: 100%;
+	position: relative;
+	width: 100%;
+	background: url(spaceEarth.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}	
+
+#hero h1{
+	color: white;
+	font-family: 'James Fajardo';
+	text-align: center;
+	font-size: 200px;
+	padding: 0;
+	margin: 0;
+	padding-top: 7%;
+	line-height: 200px;
+}
+
+#hero h4{
+	color: white;
+	font-family: 'James Fajardo';
+	font-size: 72px;
+	font-weight: 300;
+	text-align: center;
+	margin-top: -3%;
+}
+
+#hero h4 span{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+
+
+/************  Overview SECTION *************/
+
+#overview{
+	background-color: white;
+	position: relative;
+}
+
+.overview-Icon{
+	width: 40px;
+	display: inline-block;
+	vertical-align: top;
+	padding: 6px 0 0 0;
+	margin-right: 20px;
+}
+
+.overview-Icon span{
+	font-weight: bold;
+	font-size: 40px;
+    color: #FF5274;
+    position: inline-block;
+}
+
+.overview-Content{
+	display: inline-block;
+	width: 80%;
+	position: relative;
+}
+
+
+
+
+/************  ABOUT SECTION *************/
+
+
+
+
+#about{
+	background-color: #F3F4F8;
+	background-color: rgba(0,0,0, 0.05);
+	overflow: hidden;
+	position: relative;
+}
+
+
+.about-Globe{
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0;
+	position: relative;
+	width: 100%;
+	background-color: none;
+	margin-top: 0px;
+}
+
+.about-Globe span{
+	font-weight: bold;
+	font-size: 300px;
+    color: rgb(55, 25, 90);
+    position: inline-block;
+    position: relative;
+	background-color: none;
+    margin: 0;
+    padding: 0;
+	margin-left: 0%;
+
+}
+
+
+
+
+/************  STAFF SECTION *************/
+
+#staff{
+	
+	padding: 0;
+	padding-top: 50px;
+	background-color: white;
+	position: relative;
+
+}
+
+
+.staffMember {
+	width: 22%;
+	height: 350px;
+	background-color: white;
+	
+	transform: skewX(-20deg);
+	-webkit-transform: skewX(-20deg);
+	position: relative;
+	color: white;
+	transition: border-color .2s;
+	position: absolute;
+	display: block;
+	background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+}
+
+#staffWill{
+	margin-left: 3%;
+}
+
+#staffJared{
+	margin-left: 25%;
+}
+
+#staffJulia{
+	margin-left: 47%;
+}
+
+#staffAlexa{
+	margin-left: 69%;
+}
+
+#staffJake{
+	margin-left: 91%;
+}
+
+
+
+
+.staffMember img{
+	width: 200%;
+	margin-top: -50%;
+	margin-left: -15%;
+	-webkit-transform: skewX(20deg); 
+	opacity: .7;
+	transition: opacity .4s;
+	
+}
+
+.staffMember img:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+#staffInfo h3{
+	margin-top: 60px;
+	margin-bottom: 0;
+	font-size: 32px;
+	float: left;
+}
+
+
+#staffInfo a{
+	margin-top: 60px;
+	margin-bottom: 0;
+	font-size: 32px;
+	float: right;
+	opacity: .75;
+}
+
+#staffInfo a:hover{
+	cursor: pointer;
+	opacity: 1;
+}
+
+#staffInfo p{
+	color: rgba(0,0,0,.5);
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+
+
+
+
+/************  Policy Section *************/
+
+
+#policy{
+	margin-bottom: 400px;
+	z-index: 1000;
+	background-color: white;
+	
+}
+
+#policyCover{
+	width: 100%;
+	height: 100%;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+
+}
+
+#policyBG{
+	background-color: rgba(80, 80, 80, .9);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	cursor: pointer;
+}
+
+.policyScreen{
+	width: 80%;
+	height: 80%;
+	margin-left: 10%;
+	margin-top: 5%;
+	padding: 0;
+	position: absolute;
+	background-color: white;
+	cursor: default;
+}
+
+#foreignPolicyScreen{
+	background-color: rgb(55, 25, 90);
+}
+
+#domesticPolicyScreen{
+	background-color: rgb(234, 43, 71);
+}
+
+.policyScreenLeft{
+	width: 30%;
+	height: 100%;
+	position: relative;
+	
+	/*background-color: rgb(40, 154, 214);*/
+	
+	float: left;
+	
+}
+
+.policyScreenLeft h3{
+	color: white;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	margin: 40px;
+	letter-spacing: 1.1;
+	font-size: 24px;
+}
+
+.policyScreenLeft a{
+	color: rgba(255,255,255,.8);
+	font-family: 'Open Sans';
+	font-weight: 500;
+	letter-spacing: 1.1;
+	font-size: 16px;
+	line-height: 28px;
+	
+	text-decoration: none;
+	margin-left: 40px;
+	display: block;
+}
+
+.policyScreenLeft a:hover{
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+.policyScreenRight h3{
+	color: rgba(0,0,0, 0.7);
+	font-family: 'Open Sans';
+	font-weight: 400;
+	margin: 40px;
+	margin-bottom: 20px;
+	letter-spacing: 1.1;
+	font-size: 24px;
+	display: block;
+	width: 100%;
+	float: left;
+	background-color: white;
+}
+
+.policyScreenRight a{
+	margin: 0;
+	float: right;
+	display: inline-block;
+}
+
+.policyScreenRight{
+	width: 70%;
+	float: left;
+	position: relative;
+	height: 95%;
+	overflow-y: scroll;
+}
+
+.policyScreenRight p{
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 26px;
+	color: rgba(0,0,0, 0.7);
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+
+
+
+
+
+
+
+
+/***************** Footer **********************/
+
+#footer{
+	background-color: rgb(55, 25, 90);
+	height: 400px;
+	position: fixed;
+	bottom: 00;
+	z-index: -1000;
+	color: white;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 26px;
+	font-weight: 500;
+}
+
+#footer h1{
+	color: white;
+	font-family: 'James Fajardo';
+	text-align: left;
+	font-size: 140px;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	line-height: 180px;
+}
+
+
+
+
+
+
+
+
+
+/************  Down Arrow *************/
+
+
+.pulse2 {
+  -webkit-animation-name: pulse2;
+          animation-name: pulse2;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; 
+}
+			
+@-webkit-keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes pulse2 {
+  0% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  50% {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+            
+            
+.floating-arrow {
+  -webkit-animation-name: floating-arrow;
+          animation-name: floating-arrow;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; 
+}
+
+@-webkit-keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  65% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+
+@keyframes floating-arrow {
+  from {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  65% {
+    -webkit-transform: translate(-50%, 15px);
+            transform: translate(-50%, 15px); }
+  to {
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); } }
+    
+.down-arrow {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); 
+}
+
+.down-arrow a {
+    color: #fff; 
+}
+
+.down-arrow a:hover{
+	color: rgb(234, 43, 71)
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************** BUNCH OF RANDOM ICON **********************/
+
+
+
+
+@font-face {
+  font-family: 'et-line';
+  src: url("et-line.eot");
+  src: url("et-line.eot?#iefix") format("embedded-opentype"), url("et-line.woff") format("woff"), url("et-line.ttf") format("truetype"), url("et-line.svg#et-line") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'et-line';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block; }
+
+
+
+.icon-mobile, .icon-laptop, .icon-desktop, .icon-tablet, .icon-phone, .icon-document, .icon-documents, .icon-search, .icon-clipboard, .icon-newspaper, .icon-notebook, .icon-book-open, .icon-browser, .icon-calendar, .icon-presentation, .icon-picture, .icon-pictures, .icon-video, .icon-camera, .icon-printer, .icon-toolbox, .icon-briefcase, .icon-wallet, .icon-gift, .icon-bargraph, .icon-grid, .icon-expand, .icon-focus, .icon-edit, .icon-adjustments, .icon-ribbon, .icon-hourglass, .icon-lock, .icon-megaphone, .icon-shield, .icon-trophy, .icon-flag, .icon-map, .icon-puzzle, .icon-basket, .icon-envelope, .icon-streetsign, .icon-telescope, .icon-gears, .icon-key, .icon-paperclip, .icon-attachment, .icon-pricetags, .icon-lightbulb, .icon-layers, .icon-pencil, .icon-tools, .icon-tools-2, .icon-scissors, .icon-paintbrush, .icon-magnifying-glass, .icon-circle-compass, .icon-linegraph, .icon-mic, .icon-strategy, .icon-beaker, .icon-caution, .icon-recycle, .icon-anchor, .icon-profile-male, .icon-profile-female, .icon-bike, .icon-wine, .icon-hotairballoon, .icon-globe, .icon-genius, .icon-map-pin, .icon-dial, .icon-chat, .icon-heart, .icon-cloud, .icon-upload, .icon-download, .icon-target, .icon-hazardous, .icon-piechart, .icon-speedometer, .icon-global, .icon-compass, .icon-lifesaver, .icon-clock, .icon-aperture, .icon-quote, .icon-scope, .icon-alarmclock, .icon-refresh, .icon-happy, .icon-sad, .icon-facebook, .icon-twitter, .icon-googleplus, .icon-rss, .icon-tumblr, .icon-linkedin, .icon-dribbble {
+  font-family: 'et-line';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: inline-block; }
+
+.icon-mobile:before {
+  content: "\e000"; }
+
+.icon-laptop:before {
+  content: "\e001"; }
+
+.icon-desktop:before {
+  content: "\e002"; }
+
+.icon-tablet:before {
+  content: "\e003"; }
+
+.icon-phone:before {
+  content: "\e004"; }
+
+.icon-document:before {
+  content: "\e005"; }
+
+.icon-documents:before {
+  content: "\e006"; }
+
+.icon-search:before {
+  content: "\e007"; }
+
+.icon-clipboard:before {
+  content: "\e008"; }
+
+.icon-newspaper:before {
+  content: "\e009"; }
+
+.icon-notebook:before {
+  content: "\e00a"; }
+
+.icon-book-open:before {
+  content: "\e00b"; }
+
+.icon-browser:before {
+  content: "\e00c"; }
+
+.icon-calendar:before {
+  content: "\e00d"; }
+
+.icon-presentation:before {
+  content: "\e00e"; }
+
+.icon-picture:before {
+  content: "\e00f"; }
+
+.icon-pictures:before {
+  content: "\e010"; }
+
+.icon-video:before {
+  content: "\e011"; }
+
+.icon-camera:before {
+  content: "\e012"; }
+
+.icon-printer:before {
+  content: "\e013"; }
+
+.icon-toolbox:before {
+  content: "\e014"; }
+
+.icon-briefcase:before {
+  content: "\e015"; }
+
+.icon-wallet:before {
+  content: "\e016"; }
+
+.icon-gift:before {
+  content: "\e017"; }
+
+.icon-bargraph:before {
+  content: "\e018"; }
+
+.icon-grid:before {
+  content: "\e019"; }
+
+.icon-expand:before {
+  content: "\e01a"; }
+
+.icon-focus:before {
+  content: "\e01b"; }
+
+.icon-edit:before {
+  content: "\e01c"; }
+
+.icon-adjustments:before {
+  content: "\e01d"; }
+
+.icon-ribbon:before {
+  content: "\e01e"; }
+
+.icon-hourglass:before {
+  content: "\e01f"; }
+
+.icon-lock:before {
+  content: "\e020"; }
+
+.icon-megaphone:before {
+  content: "\e021"; }
+
+.icon-shield:before {
+  content: "\e022"; }
+
+.icon-trophy:before {
+  content: "\e023"; }
+
+.icon-flag:before {
+  content: "\e024"; }
+
+.icon-map:before {
+  content: "\e025"; }
+
+.icon-puzzle:before {
+  content: "\e026"; }
+
+.icon-basket:before {
+  content: "\e027"; }
+
+.icon-envelope:before {
+  content: "\e028"; }
+
+.icon-streetsign:before {
+  content: "\e029"; }
+
+.icon-telescope:before {
+  content: "\e02a"; }
+
+.icon-gears:before {
+  content: "\e02b"; }
+
+.icon-key:before {
+  content: "\e02c"; }
+
+.icon-paperclip:before {
+  content: "\e02d"; }
+
+.icon-attachment:before {
+  content: "\e02e"; }
+
+.icon-pricetags:before {
+  content: "\e02f"; }
+
+.icon-lightbulb:before {
+  content: "\e030"; }
+
+.icon-layers:before {
+  content: "\e031"; }
+
+.icon-pencil:before {
+  content: "\e032"; }
+
+.icon-tools:before {
+  content: "\e033"; }
+
+.icon-tools-2:before {
+  content: "\e034"; }
+
+.icon-scissors:before {
+  content: "\e035"; }
+
+.icon-paintbrush:before {
+  content: "\e036"; }
+
+.icon-magnifying-glass:before {
+  content: "\e037"; }
+
+.icon-circle-compass:before {
+  content: "\e038"; }
+
+.icon-linegraph:before {
+  content: "\e039"; }
+
+.icon-mic:before {
+  content: "\e03a"; }
+
+.icon-strategy:before {
+  content: "\e03b"; }
+
+.icon-beaker:before {
+  content: "\e03c"; }
+
+.icon-caution:before {
+  content: "\e03d"; }
+
+.icon-recycle:before {
+  content: "\e03e"; }
+
+.icon-anchor:before {
+  content: "\e03f"; }
+
+.icon-profile-male:before {
+  content: "\e040"; }
+
+.icon-profile-female:before {
+  content: "\e041"; }
+
+.icon-bike:before {
+  content: "\e042"; }
+
+.icon-wine:before {
+  content: "\e043"; }
+
+.icon-hotairballoon:before {
+  content: "\e044"; }
+
+.icon-globe:before {
+  content: "\e045"; }
+
+.icon-genius:before {
+  content: "\e046"; }
+
+.icon-map-pin:before {
+  content: "\e047"; }
+
+.icon-dial:before {
+  content: "\e048"; }
+
+.icon-chat:before {
+  content: "\e049"; }
+
+.icon-heart:before {
+  content: "\e04a"; }
+
+.icon-cloud:before {
+  content: "\e04b"; }
+
+.icon-upload:before {
+  content: "\e04c"; }
+
+.icon-download:before {
+  content: "\e04d"; }
+
+.icon-target:before {
+  content: "\e04e"; }
+
+.icon-hazardous:before {
+  content: "\e04f"; }
+
+.icon-piechart:before {
+  content: "\e050"; }
+
+.icon-speedometer:before {
+  content: "\e051"; }
+
+.icon-global:before {
+  content: "\e052"; }
+
+.icon-compass:before {
+  content: "\e053"; }
+
+.icon-lifesaver:before {
+  content: "\e054"; }
+
+.icon-clock:before {
+  content: "\e055"; }
+
+.icon-aperture:before {
+  content: "\e056"; }
+
+.icon-quote:before {
+  content: "\e057"; }
+
+.icon-scope:before {
+  content: "\e058"; }
+
+.icon-alarmclock:before {
+  content: "\e059"; }
+
+.icon-refresh:before {
+  content: "\e05a"; }
+
+.icon-happy:before {
+  content: "\e05b"; }
+
+.icon-sad:before {
+  content: "\e05c"; }
+
+.icon-facebook:before {
+  content: "\e05d"; }
+
+.icon-twitter:before {
+  content: "\e05e"; }
+
+.icon-googleplus:before {
+  content: "\e05f"; }
+
+.icon-rss:before {
+  content: "\e060"; }
+
+.icon-tumblr:before {
+  content: "\e061"; }
+
+.icon-linkedin:before {
+  content: "\e062"; }
+
+.icon-dribbble:before {
+  content: "\e063"; }
+

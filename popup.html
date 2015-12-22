@@ -1,0 +1,160 @@
+<html>
+	<head>
+		
+
+		<style>
+			
+			@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800,100);
+			@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+			
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: rgb(80,80,80);
+				cursor: pointer;
+			}
+			
+			#policyScreen{
+				width: 80%;
+				height: 80%;
+				margin-left: 10%;
+				margin-top: 5%;
+				padding: 0;
+				position: absolute;
+				background-color: white;
+				cursor: default;
+			}
+			
+			.policyScreenLeft{
+				width: 30%;
+				height: 100%;
+				position: relative;
+				background-color: rgb(234, 43, 71);
+				background-color: rgb(40, 154, 214);
+				background-color: rgb(55, 25, 90);
+				float: left;
+				
+			}
+			
+			.policyScreenLeft h3{
+				color: white;
+				font-family: 'Open Sans';
+				font-weight: 300;
+				margin: 40px;
+				letter-spacing: 1.1;
+				font-size: 24px;
+			}
+			
+			.policyScreenLeft a{
+				color: rgba(255,255,255,.8);
+				font-family: 'Open Sans';
+				font-weight: 300;
+				letter-spacing: 1.1;
+				font-size: 16px;
+				line-height: 28px;
+				
+				text-decoration: none;
+				margin-left: 40px;
+				display: block;
+			}
+			
+			.policyScreenLeft a:hover{
+				cursor: pointer;
+				color: white;
+			}
+			
+			.policyScreenRight h3{
+				color: rgba(0,0,0, 0.7);
+				font-family: 'Open Sans';
+				font-weight: 400;
+				margin: 40px;
+				margin-bottom: 20px;
+				letter-spacing: 1.1;
+				font-size: 24px;
+				display: inline-block;
+				background-color: white;
+			}
+			
+			.policyScreenRight{
+				width: 70%;
+				float: left;
+				position: relative;
+				height: 95%;
+				overflow-y: scroll;
+			}
+			
+			.policyScreenRight p{
+				font-family: 'Open Sans';
+				font-size: 15px;
+				line-height: 26px;
+				color: rgba(0,0,0, 0.7);
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+			
+			#closeIcon{
+				display: inline-block;
+				height: 32px;
+				width: 32px;
+				float: right;
+				margin: 40px;
+				margin-top: 32px;
+			}
+			
+			
+		</style>
+		
+		
+		
+		<script>
+			
+			function foreignPlatform(chooser){
+				var foreignData = [
+					{title: 'Russia', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Latin America', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Eastern Europe', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Israel/Palestine', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'ISIS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Iraq & Afghanistan', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'India', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'China', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'North Korea', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'AIDS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+				]
+				
+				
+				document.getElementById('rightSide').innerHTML = '<h3>' + foreignData[chooser].title + '</h3><p>' + foreignData[chooser].content + '</p>'
+			}
+			
+		</script>
+		
+	</head>
+	
+	
+	
+	<body>
+		
+		<div id="policyScreen">
+			<div class="policyScreenLeft">
+				<h3>Foreign Policy</h3>
+				
+				<a onclick="foreignPlatform(0)">Russia</a>
+				<a onclick="foreignPlatform(1)">Latin America</a>
+				<a onclick="foreignPlatform(2)">Eastern Europe</a>
+				<a onclick="foreignPlatform(3)">Israel/Palestine</a>
+				<a onclick="foreignPlatform(4)">ISIS</a>
+				<a onclick="foreignPlatform(5)">Iraq & Afghanistan</a>
+				<a onclick="foreignPlatform(6)">India</a>
+				<a onclick="foreignPlatform(7)">China</a>
+				<a onclick="foreignPlatform(8)">North Korea</a>
+				<a onclick="foreignPlatform(9)">AIDS</a>
+			</div>
+			
+			<div class="policyScreenRight">
+				<h3>Russia</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		
+	</body>
+</html>
