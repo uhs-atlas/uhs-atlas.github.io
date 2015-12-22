@@ -165,9 +165,10 @@ div.extraPadding{
 
 #about{
 	background-color: #F3F4F8;
-	background-color: rgba(0,0,0, 0.05);
+	background-color: rgb(245, 245, 245);
 	overflow: hidden;
 	position: relative;
+	z-index: 10;
 }
 
 
@@ -303,8 +304,8 @@ div.extraPadding{
 
 
 #policy{
-	margin-bottom: 400px;
-	z-index: 1000;
+	
+	z-index: 1001;
 	background-color: white;
 	
 }
@@ -434,11 +435,9 @@ div.extraPadding{
 /***************** Footer **********************/
 
 #footer{
-	background-color: rgb(55, 25, 90);
+	background-color: rgb(52, 53, 56);
 	height: 400px;
-	position: fixed;
-	bottom: 00;
-	z-index: -1000;
+	z-index: 0;
 	color: white;
 	font-family: 'Open Sans';
 	font-size: 15px;
@@ -455,8 +454,25 @@ div.extraPadding{
 	margin: 0;
 	padding-top: 20px;
 	line-height: 180px;
+	float: left;
+	margin-right: 100px;
 }
 
+#footer img{
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	margin-top: 75px;
+	float: left;
+	margin-right: 25px;
+	opacity: .75;
+	transition: opacity .2s;
+}
+
+#footer img:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
 
 
 
