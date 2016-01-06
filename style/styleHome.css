@@ -13,7 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: rgba(28, 54, 83, 0.6);
-  -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
   overflow-x: hidden;
 }
 
@@ -23,35 +23,35 @@ p {
   line-height: 29px;
   color: rgba(28, 54, 83, 0.6);
   color: rgba(0,0,0, 0.7);
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 60px; 
 }
 
 h2 {
   font-size: 38px;
   font-weight: 300;
-  color: #3D4351;
+  color: #3D4351; 
 }
 
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #3D4351;
+  color: #3D4351; 
   font-weight: 100;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 18px; 
 }
 
 h5 {
   font-size: 15px;
   color: #3D4351;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 500; 
 }
 
 .butn {
@@ -62,8 +62,8 @@ h5 {
   color: #ff5174;
   display: inline-block;
   text-transform: uppercase;
-  padding: 8px 40px;
-  transition: background-color .3s;
+  padding: 8px 40px; 
+  transition: background-color .3s; 
 }
 
 .butn:hover, .butn:focus {
@@ -96,16 +96,12 @@ div.extraPadding{
 	height: 100%;
 	position: relative;
 	width: 100%;
-<<<<<<< Updated upstream
-	background: url(spaceEarth.jpg) no-repeat center center fixed;
-=======
 	background: url(purple.jpeg) no-repeat center center fixed; 
->>>>>>> Stashed changes
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
+}	
 
 #hero h1{
 	color: white;
@@ -210,12 +206,12 @@ div.extraPadding{
 /************  STAFF SECTION *************/
 
 #staff{
-
-	padding: 0;
+	
+	
 	padding-top: 50px;
 	background-color: white;
 	position: relative;
-	width: 90%
+
 }
 
 
@@ -223,8 +219,7 @@ div.extraPadding{
 	width: 22%;
 	height: 350px;
 	background-color: white;
-
-
+	
 	transform: skewX(-20deg);
 	-webkit-transform: skewX(-20deg);
 	position: relative;
@@ -235,7 +230,7 @@ div.extraPadding{
 	background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
-
+    
 }
 
 #staffWill{
@@ -265,10 +260,10 @@ div.extraPadding{
 	width: 200%;
 	margin-top: -50%;
 	margin-left: -15%;
-	-webkit-transform: skewX(20deg);
+	-webkit-transform: skewX(20deg); 
 	opacity: .7;
 	transition: opacity .4s;
-
+	
 }
 
 .staffMember img:hover{
@@ -313,16 +308,16 @@ div.extraPadding{
 
 
 #policy{
-
+	
 	z-index: 1001;
 	background-color: white;
-
+	
 }
 
 #policyCover{
 	width: 100%;
 	height: 100%;
-
+	
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -361,11 +356,11 @@ div.extraPadding{
 	width: 30%;
 	height: 100%;
 	position: relative;
-
+	
 	/*background-color: rgb(40, 154, 214);*/
-
+	
 	float: left;
-
+	
 }
 
 .policyScreenLeft h3{
@@ -384,7 +379,7 @@ div.extraPadding{
 	letter-spacing: 1.1;
 	font-size: 16px;
 	line-height: 28px;
-
+	
 	text-decoration: none;
 	margin-left: 40px;
 	display: block;
@@ -501,9 +496,9 @@ div.extraPadding{
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+          animation-timing-function: linear; 
 }
-
+			
 @-webkit-keyframes pulse2 {
   0% {
     -webkit-transform: scale(1.1);
@@ -525,8 +520,8 @@ div.extraPadding{
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
-
-
+            
+            
 .floating-arrow {
   -webkit-animation-name: floating-arrow;
           animation-name: floating-arrow;
@@ -535,7 +530,7 @@ div.extraPadding{
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; 
 }
 
 @-webkit-keyframes floating-arrow {
@@ -559,7 +554,7 @@ div.extraPadding{
   to {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); } }
-
+    
 .down-arrow {
   color: #fff;
   font-size: 30px;
@@ -568,30 +563,22 @@ div.extraPadding{
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+          transform: translateX(-50%); 
 }
 
 .down-arrow a {
-    color: #fff;
+    color: #fff; 
 }
 
 .down-arrow a:hover{
 	color: rgb(234, 43, 71)
 }
 
-/* PHONE CSS */
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-}
 
-/* TABLET CSS */
 
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-/* Styles */
-}
+
+
 
 
 
@@ -608,12 +595,6 @@ div.extraPadding{
   src: url("et-line.eot?#iefix") format("embedded-opentype"), url("et-line.woff") format("woff"), url("et-line.ttf") format("truetype"), url("et-line.svg#et-line") format("svg");
   font-weight: normal;
   font-style: normal; }
-
-@font-face {
-  font-family: 'James Fajardo';
-  src: url('James_Fajardo.ttf');
-}
-
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
   font-family: 'et-line';
@@ -940,3 +921,4 @@ div.extraPadding{
 
 .icon-dribbble:before {
   content: "\e063"; }
+
