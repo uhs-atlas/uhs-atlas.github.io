@@ -311,6 +311,12 @@
 				document.getElementById('mainTitle').style.paddingTop = "20%";
 				document.getElementById('mainSubTitle').style.fontSize = "60px";
 				document.getElementById('mainSubTitle').style.fontSize = "60px";
+				var mExtraPadding = document.getElementsByClassName("extraPadding");
+
+				for (var i = 0, max = mExtraPadding.length; i < max; i++) {
+					mExtraPadding[i].style.paddingLeft = 20 + "px"
+					mExtraPadding[i].style.paddingRight = 20 + "px"
+				}
 			}
 
 <<<<<<< HEAD
