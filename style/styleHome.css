@@ -223,6 +223,8 @@ div.extraPadding{
 }
 
 
+
+
 .staffMember {
 	width: 22%;
 	height: 350px;
@@ -240,6 +242,23 @@ div.extraPadding{
     overflow: hidden;
     
 }
+
+.mStaffMember{
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	color: white;
+	position: relative;
+	
+    overflow: hidden;
+}
+
+.mStaffMember img{
+	width: 100%;
+	position: relative;
+	margin-top: -10%;
+}
+
 
 #staffWill{
 	margin-left: 0;
