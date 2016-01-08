@@ -13,7 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
   color: rgba(28, 54, 83, 0.6);
-  -webkit-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%;
   overflow-x: hidden;
 }
 
@@ -23,35 +23,35 @@ p {
   line-height: 29px;
   color: rgba(28, 54, 83, 0.6);
   color: rgba(0,0,0, 0.7);
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 h1 {
-  font-size: 60px; 
+  font-size: 60px;
 }
 
 h2 {
   font-size: 38px;
   font-weight: 300;
-  color: #3D4351; 
+  color: #3D4351;
 }
 
 h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #3D4351; 
+  color: #3D4351;
   font-weight: 100;
 }
 
 h4 {
-  font-size: 18px; 
+  font-size: 18px;
 }
 
 h5 {
   font-size: 15px;
   color: #3D4351;
   text-transform: uppercase;
-  font-weight: 500; 
+  font-weight: 500;
 }
 
 .butn {
@@ -62,8 +62,8 @@ h5 {
   color: #ff5174;
   display: inline-block;
   text-transform: uppercase;
-  padding: 8px 40px; 
-  transition: background-color .3s; 
+  padding: 8px 40px;
+  transition: background-color .3s;
 }
 
 .butn:hover, .butn:focus {
@@ -97,13 +97,13 @@ div.extraPadding{
 	position: relative;
 	width: 100%;
 
-	background: url(purple.jpeg) no-repeat center center fixed; 
+	background: url(purple.jpeg) no-repeat center center fixed;
 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}	
+}
 
 #hero h1{
 	color: white;
@@ -209,8 +209,8 @@ div.extraPadding{
 
 #staff{
 
-	
-	
+
+
 	padding-top: 50px;
 	background-color: white;
 	position: relative;
@@ -229,7 +229,7 @@ div.extraPadding{
 	width: 22%;
 	height: 350px;
 	background-color: white;
-	
+
 	transform: skewX(-20deg);
 	-webkit-transform: skewX(-20deg);
 	position: relative;
@@ -240,7 +240,7 @@ div.extraPadding{
 	background-size: 100%;
     background-repeat: no-repeat;
     overflow: hidden;
-    
+
 }
 
 .mStaffMember{
@@ -261,23 +261,23 @@ div.extraPadding{
 
 
 #staffWill{
-	margin-left: 0;
+	margin-left: 3%;
 }
 
 #staffJared{
-	margin-left: 22%;
+	margin-left: 25%;
 }
 
 #staffJulia{
-	margin-left: 44%;
+	margin-left: 47%;
 }
 
 #staffAlexa{
-	margin-left: 66%;
+	margin-left: 69%;
 }
 
 #staffJake{
-	margin-left: 88%;
+	margin-left: 91%;
 }
 
 
@@ -287,10 +287,10 @@ div.extraPadding{
 	width: 200%;
 	margin-top: -50%;
 	margin-left: -15%;
-	-webkit-transform: skewX(20deg); 
+	-webkit-transform: skewX(20deg);
 	opacity: .7;
 	transition: opacity .4s;
-	
+
 }
 
 .staffMember img:hover{
@@ -298,6 +298,9 @@ div.extraPadding{
 	cursor: pointer;
 }
 
+#staffInfo{
+  overflow-y: hidden;
+}
 
 #staffInfo h3{
 	margin-top: 60px;
@@ -335,16 +338,16 @@ div.extraPadding{
 
 
 #policy{
-	
+
 	z-index: 1001;
 	background-color: white;
-	
+
 }
 
 #policyCover{
 	width: 100%;
 	height: 100%;
-	
+
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -383,11 +386,11 @@ div.extraPadding{
 	width: 30%;
 	height: 100%;
 	position: relative;
-	
+
 	/*background-color: rgb(40, 154, 214);*/
-	
+
 	float: left;
-	
+
 }
 
 .policyScreenLeft h3{
@@ -406,7 +409,7 @@ div.extraPadding{
 	letter-spacing: 1.1;
 	font-size: 16px;
 	line-height: 28px;
-	
+
 	text-decoration: none;
 	margin-left: 40px;
 	display: block;
@@ -524,9 +527,9 @@ div.extraPadding{
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-          animation-timing-function: linear; 
+          animation-timing-function: linear;
 }
-			
+
 @-webkit-keyframes pulse2 {
   0% {
     -webkit-transform: scale(1.1);
@@ -548,8 +551,8 @@ div.extraPadding{
   100% {
     -webkit-transform: scale(1);
             transform: scale(1); } }
-            
-            
+
+
 .floating-arrow {
   -webkit-animation-name: floating-arrow;
           animation-name: floating-arrow;
@@ -558,7 +561,7 @@ div.extraPadding{
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out; 
+          animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes floating-arrow {
@@ -582,7 +585,7 @@ div.extraPadding{
   to {
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); } }
-    
+
 .down-arrow {
   color: #fff;
   font-size: 30px;
@@ -591,11 +594,11 @@ div.extraPadding{
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
-          transform: translateX(-50%); 
+          transform: translateX(-50%);
 }
 
 .down-arrow a {
-    color: #fff; 
+    color: #fff;
 }
 
 .down-arrow a:hover{
@@ -949,4 +952,3 @@ div.extraPadding{
 
 .icon-dribbble:before {
   content: "\e063"; }
-
