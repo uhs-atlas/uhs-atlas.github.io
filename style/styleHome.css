@@ -249,7 +249,7 @@ div.extraPadding{
 	background-color: white;
 	color: white;
 	position: relative;
-	
+
     overflow: hidden;
 }
 
@@ -298,6 +298,17 @@ div.extraPadding{
 	cursor: pointer;
 }
 
+.mStaffMember img{
+  width: 100%;
+  opacity: 1.0;
+  transition: opacity .4s;
+}
+
+.mStaffMember img:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
 #staffInfo{
   overflow-y: hidden;
 }
@@ -330,7 +341,10 @@ div.extraPadding{
 	display: block;
 }
 
-
+#mStaffInfo{
+  display: none;
+  height: 500px;
+}
 
 
 

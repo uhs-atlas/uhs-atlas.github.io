@@ -138,7 +138,7 @@
 		<section id="staff">
 			<div class="container" style="padding: 0; margin: 0; width: 100%">
 				<div class="row">
-					<div class="col-md-12 extraPadding">
+					<div class="col-md-12 extraPadding mStaff">
 						<h3>Staff</h3>
 						<p>Atlas is more than just its five leaders; the real Atlas is the group of dedicated individuals who work everyday to make this party what it is. To run the modern political party it takes more than just policy experts: it requests programmers and artists, photographers and writers, videographers and graphic designers. To maintain a presence across the web and the real world takes great effort and coordination so the world deserves to know that it is our staffers make this possible. Cole and Oshadha on web design, Sierra taking the photos, Mackenzie making Phil the Atlas man, Kellene, Emily and the Kaylas giving up their break to help make posters, and the entire first period Government class who works tirelessly everyday to make sure everything gets done and looks great.</p>
 					</div>
@@ -170,15 +170,28 @@
 
 				</div>-->
 
-			<div class="row" id="mStaffMemberRow" style="width: 100%; display: block; background-color: rgb(245, 245, 245); overflow: hidden; margin: 0; padding: 0">
+				<div class="row" id="mStaffMemberRow" style="width: 100%; display: block; background-color: rgb(245, 245, 245); overflow: hidden; margin: 0; padding: 0">
 
-					<div class="mStaffMember" onclick="mStaffSelection(0)" id="mStaffWill"><img src="staffWill.jpg" /></div>
-					<div class="mStaffMember" onclick="mStaffSelection(1)" id="mStaffJared"><img src="staffJared.jpg" /></div>
-					<div class="mStaffMember" onclick="mStaffSelection(2)" id="mStaffJulia"><img src="staffJulia.jpg" /></div>
-					<div class="mStaffMember" onclick="mStaffSelection(3)" id="mStaffAlexa"><img src="staffAlexa.jpg" /></div>
-					<div class="mStaffMember" onclick="mStaffSelection(4)" id="mStaffJake"><img src="staffJake.jpg" /></div>
+						<div class="mStaffMember" onclick="mStaffSelection(0)" id="mStaffWill"><img src="staffWill.jpg" id="staffPicWill"/></div>
+						<div id="mStaffInfoWill" style="width: 100%; padding: 10px; display: none"></div>
+						<div class="mStaffMember" onclick="mStaffSelection(1)" id="mStaffJared"><img src="staffJared.jpg" id="staffPicJared"/></div>
+						<div id="mStaffInfoJared" style="width: 100%; padding: 10px; display: none"></div>
+						<div class="mStaffMember" onclick="mStaffSelection(2)" id="mStaffJulia"><img src="staffJulia.jpg" id="staffPicJulia"/></div>
+						<div id="mStaffInfoJulia" style="width: 100%; padding: 10px; display: none"></div>
+						<div class="mStaffMember" onclick="mStaffSelection(3)" id="mStaffAlexa"><img src="staffAlexa.jpg" id="staffPicAlexa"/></div>
+						<div id="mStaffInfoAlexa" style="width: 100%; padding: 10px; display: none"></div>
+						<div class="mStaffMember" onclick="mStaffSelection(4)" id="mStaffJake"><img src="staffJake.jpg" id="staffPicJake"/></div>
+						<div id="mStaffInfoJake" style="width: 100%; padding: 10px; display: none"></div>
+
+						<div id="mStaffInfo" style="width: 100%; padding: 10px; display: none">
+							<h3>Molly Dostalik - Supreme Leader</h3>
+							<p></p>
+							<p>Molly Dostalik is a fighter and has always been a fighter. She has fought against the outrageous demands of her loving owner, whether it be fighting her way out of a bathtub, or fighting her way out late night Sonic Dates. While her owner may see this as rude selfishness, she sees it as an expression of her independence, an independence she has spent eight years fighting for, because she is a fighter</p>
+							<p>Quote: "Why the fuck am I in this bathtub?"</p>
+						</div>
 
 				</div>
+
 			</div>
 		</section>
 
@@ -189,7 +202,7 @@
 				<div class="row">
 					<div class="col-md-12 extraPadding">
 						<h3>Policy</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet.</p>
+						<p>We are committed to making our nation stronger. Atlas designs its policy to take on the today's problems at the source. This approach may feel drastic at first but give it time, it'll feel like the America you want. </p>
 					</div>
 				</div>
 
@@ -305,6 +318,10 @@
 
 		<script>
 
+			// MEDIA QUERIES
+
+			var mq = window.matchMedia("")
+
 			if(window.innerWidth <= 640){
 				document.getElementById('mainTitle').style.fontSize = "120px";
 				document.getElementById('mainTitle').style.lineHeight = "120px";
@@ -318,24 +335,6 @@
 					mExtraPadding[i].style.paddingRight = 20 + "px"
 				}
 			}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 			//var backgrounds = new Array('url(blueMts.jpeg)', 'url(rocky.jpeg)', 'url(costal.jpeg)', 'url(bgMaybe.jpeg)', 'url(dear.jpeg)', 'url(dusk.jpeg)', 'url(purple.jpeg)', 'url(stars.jpeg)');
 			document.getElementById('hero').style.backgroundImage = 'url(purple.jpeg)';
@@ -405,17 +404,11 @@
 				document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3><p>' + domesticData[chooser].content + '</p>'
 			}
 
-
-
-
-
-
-
+			var staffInfoOn = 0;
 
 			function closeStaffInfo(){
 
 				$("#staffInfo").fadeOut();
-
 
 				document.getElementById('staffWill').style.marginLeft = '3%';
 				document.getElementById('staffJared').style.marginLeft = '3%';
@@ -533,6 +526,63 @@
 					document.getElementById('staffInfo').innerHTML = "<h3>Jake Damle - Foreign Chair</h3><a onclick='closeStaffInfo()'><img src='closeIcon.png' alt='closeIcon' width='32' height='32' /></a><p></p><p>Introducing: Jake Damle, Altas Foreign Chair</p><p>Fun fact: Jake Damle's last name does not rhyme with 'camel'. It is actually pronounced 'dom-lay'. However, not unlike the resilient camel, Jake is driven. He persist in achieving his goals and will make it very clear that nothing will stop him from reaching his desires. Jake's visions will work towards supporting the globe and he will continue to push for beliefs that benefit the masses. On top of that, Jake remains vocal in his ideals, challenging anyone to stop him. Jake Damle's last name also does not rhyme with 'best foreign chair' but he is.</p>"
 					$("#staffInfo").fadeIn();
 				}
+			}
+
+			function mStaffSelection(choose){
+
+				if (staffInfoOn == 0){
+					staffInfoOn = 1;
+					if (choose == 0){
+						/*$("#mStaffJared").fadeOut();
+						$("#mStaffJulia").fadeOut();
+						$("#mStaffAlexa").fadeOut();
+						$("#mStaffJake").fadeOut();*/
+						$("#mStaffWill").animate({marginTop: '0px'});
+						document.getElementById('mStaffWill').style.opacity = '1.0';
+						document.getElementById('mStaffInfoWill').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
+						$("#mStaffInfoWill").fadeIn();
+					}
+					else if (choose == 1){
+						/*$("#mStaffWill").fadeOut();
+						$("#mStaffJulia").fadeOut();
+						$("#mStaffAlexa").fadeOut();
+						$("#mStaffJake").fadeOut();*/
+						$("#mStaffJared").animate({marginTop: '0px'});
+						document.getElementById('mStaffJared').style.opacity = '1.0';
+						document.getElementById('mStaffInfoJared').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
+						$("#mStaffInfoJared").fadeIn();
+					}
+					else if (choose == 2){
+						/*$("#mStaffWill").fadeOut();
+						$("#mStaffJared").fadeOut();
+						$("#mStaffAlexa").fadeOut();
+						$("#mStaffJake").fadeOut();*/
+						$("#mStaffJulia").animate({marginTop: '0px'});
+						document.getElementById('mStaffJulia').style.opacity = '1.0';
+						document.getElementById('mStaffInfoJulia').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
+						$("#mStaffInfoJulia").fadeIn();
+					}
+					else if (choose == 3){
+
+					}
+					else if (choose == 4){
+
+					}
+				}
+				else {
+					staffInfoOn = 0;
+					$("#mStaffInfoWill").fadeOut();
+					$("#mStaffInfoJared").fadeOut();
+					$("#mStaffInfoJulia").fadeOut();
+					$("#mStaffInfoAlexa").fadeOut();
+					$("#mStaffInfoJake").fadeOut();
+					$("#mStaffWill").fadeIn();
+					$("#mStaffJared").fadeIn();
+					$("#mStaffJulia").fadeIn();
+					$("#mStaffAlexa").fadeIn();
+					$("#mStaffJake").fadeIn();
+				}
+
 			}
 
 		</script>
