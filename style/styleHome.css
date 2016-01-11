@@ -523,7 +523,56 @@ div.extraPadding{
 	cursor: pointer;
 }
 
+#mFooter{
+	background-color: rgb(52, 53, 56);
 
+	z-index: 0;
+	color: white;
+	
+	font-weight: 500;
+}
+
+#mFooter h1{
+	color: white;
+	font-family: 'James Fajardo';
+	text-align: left;
+	font-size: 80px;
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	line-height: 80px;
+	float: left;
+	
+}
+
+#mFooter img{
+	display: inline-block;
+	margin-left: 3%;
+	margin-right: 3%;
+	width: 18%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	float: left;
+	opacity: .75;
+	transition: opacity .2s;
+}
+
+#mFooter img:hover{
+	opacity: 1.0;
+	cursor: pointer;
+}
+
+#mFooter p{
+	padding: 0;
+	margin: 0;
+	padding-left: 20px;
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 30px;
+	color: white;
+	top: 0;
+	
+}
 
 
 
