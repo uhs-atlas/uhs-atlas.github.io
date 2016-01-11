@@ -3,30 +3,18 @@
 		
 		<style>
 		
-			#policy{
-		
-				z-index: 1001;
-				background-color: white;
-			
+			body{
+				margin: 0;
+				padding: 0;
 			}
 			
-			#policyCover{
-				width: 100%;
-				height: 100%;
-			
-				position: fixed;
-				top: 0;
-				left: 0;
-				z-index: 1000;
-			
-			}
-			
-			#policyBG{
-				background-color: rgba(80, 80, 80, .9);
-				width: 100%;
-				height: 100%;
+			#closeMPolicy{
 				position: absolute;
-				cursor: pointer;
+				top: 20px;
+				left: 20px;
+				z-index: 10000;
+				height: 50px;
+				width: 50px;
 			}
 			
 			.mPolicyScreen{
@@ -49,7 +37,7 @@
 			
 			.mPolicyScreenHead{
 				width: 100%;
-				height: 20%;
+				
 				position: relative;
 			
 				/*background-color: rgb(40, 154, 214);*/
@@ -94,10 +82,11 @@
 				background-color: white;
 				border-radius: 0;
 				font-size: 18px;
-				bottom: 20px;
+				margin-top: 60px;
+				margin-bottom: 60px;
 				position: relative;
 				display: block;
-				
+				text-align: center;
 			}
 			
 			.mPolicyScreenBody h3{
@@ -124,7 +113,7 @@
 				width: 100%;
 				float: left;
 				position: relative;
-				height: 75%;
+				
 				overflow-y: scroll;
 			    overflow-x: hidden;
 			}
@@ -148,10 +137,8 @@
 	<body>
 		
 		
-		
-		<div id="policyCover">
-
-			<div id="policyBG" onclick="closePolicyScreen()">&nbsp;</div>
+			<img id="closeMPolicy" src="closeIcon.png" />
+	
 
 			<div class="mPolicyScreen" id="mDomesticScreen">
 				<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
@@ -160,6 +147,15 @@
 
 					<select>
 						<option>Russia</option>
+						<option>Latin America</option>
+						<option>Eastern Europe</option>
+						<option>Israel/Palestine</option>
+						<option>ISIS</option>
+						<option>Iraq & Afghanistan</option>
+						<option>India</option>
+						<option>China</option>
+						<option>North Korea</option>
+						<option>AIDS</option>
 					</select>
 
 					<!--<a onclick="domesticPlatform(0)">Russia</a>
@@ -181,9 +177,7 @@
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
 			</div>
-
-		
-		</div>
+	
 		
 	</body>
 	
