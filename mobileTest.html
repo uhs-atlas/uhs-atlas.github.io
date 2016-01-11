@@ -1,0 +1,178 @@
+<html>
+	<head>
+		
+		<style>
+		
+			#policy{
+		
+				z-index: 1001;
+				background-color: white;
+			
+			}
+			
+			#policyCover{
+				width: 100%;
+				height: 100%;
+			
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 1000;
+			
+			}
+			
+			#policyBG{
+				background-color: rgba(80, 80, 80, .9);
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				cursor: pointer;
+			}
+			
+			.mPolicyScreen{
+				width: 80%;
+				height: 80%;
+				margin-left: 10%;
+				margin-top: 5%;
+				padding: 0;
+				position: absolute;
+				background-color: white;
+				cursor: default;
+			}
+			
+			#mForeignPolicyScreen{
+				background-color: rgb(55, 25, 90);
+			}
+			
+			#mDomesticPolicyScreen{
+				background-color: rgb(234, 43, 71);
+			}
+			
+			.mPolicyScreenLeft{
+				width: 100%;
+				
+				position: relative;
+			
+				/*background-color: rgb(40, 154, 214);*/
+			
+				float: left;
+			
+			}
+			
+			.mPolicyScreenLeft h3{
+				color: white;
+				font-family: 'Open Sans';
+				font-weight: 400;
+				margin: 40px;
+				letter-spacing: 1.1;
+				font-size: 24px;
+			}
+			
+			.mPolicyScreenLeft a{
+				color: rgba(255,255,255,.8);
+				font-family: 'Open Sans';
+				font-weight: 500;
+				letter-spacing: 1.1;
+				font-size: 16px;
+				line-height: 28px;
+			
+				text-decoration: none;
+				margin-left: 40px;
+				display: block;
+			}
+			
+			.mPolicyScreenLeft a:hover{
+				cursor: pointer;
+				color: white;
+				text-decoration: none;
+			}
+			
+			.mPolicyScreenRight h3{
+				color: rgba(0,0,0, 0.7);
+				font-family: 'Open Sans';
+				font-weight: 400;
+				margin: 40px;
+				margin-bottom: 20px;
+				letter-spacing: 1.1;
+				font-size: 24px;
+				display: block;
+				width: 100%;
+				float: left;
+				background-color: white;
+			}
+			
+			.mPolicyScreenRight a{
+				margin: 0;
+				float: right;
+				display: inline-block;
+			}
+			
+			.mPolicyScreenRight{
+				width: 100%;
+				float: left;
+				position: relative;
+				
+				overflow-y: scroll;
+			  overflow-x: hidden;
+			}
+			
+			.mPolicyScreenRight p{
+				font-family: 'Open Sans';
+				font-size: 15px;
+				line-height: 26px;
+				color: rgba(0,0,0, 0.7);
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+
+	
+			
+		</style>
+		
+	</head>
+	
+	
+	<body>
+		
+		
+		
+		<div id="policyCover">
+
+			<div id="policyBG" onclick="closePolicyScreen()">&nbsp;</div>
+
+			<div class="mPolicyScreen" id="mDomesticScreen">
+				<div class="mPolicyScreenLeft" id="mDomesticPolicyScreen">
+					<h3>Domestic Policy</h3>
+
+
+					<select>
+						<option>Russia</option>
+					</select>
+
+					<!--<a onclick="domesticPlatform(0)">Russia</a>
+					<a onclick="domesticPlatform(1)">Latin America</a>
+					<a onclick="domesticPlatform(2)">Eastern Europe</a>
+					<a onclick="domesticPlatform(3)">Israel/Palestine</a>
+					<a onclick="domesticPlatform(4)">ISIS</a>
+					<a onclick="domesticPlatform(5)">Iraq & Afghanistan</a>
+					<a onclick="domesticPlatform(6)">India</a>
+					<a onclick="domesticPlatform(7)">China</a>
+					<a onclick="domesticPlatform(8)">North Korea</a>
+					<a onclick="domesticPlatform(9)">AIDS</a>-->
+				</div>
+
+				<div class="mPolicyScreenRight" id="mDomesticContent">
+
+					<h3>Russia</h3>
+
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+			</div>
+
+		
+		</div>
+		
+	</body>
+	
+	
+</html>

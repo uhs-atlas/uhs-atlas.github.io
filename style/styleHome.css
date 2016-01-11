@@ -481,6 +481,12 @@ div.extraPadding{
 
 
 
+
+
+
+
+
+
 /***************** Footer **********************/
 
 #footer{
@@ -551,7 +557,7 @@ div.extraPadding{
 	margin-right: 3%;
 	width: 18%;
 	margin-top: 15px;
-	margin-bottom: 15px;
+	margin-bottom: 30px;
 	float: left;
 	opacity: .75;
 	transition: opacity .2s;
