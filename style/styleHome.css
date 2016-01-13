@@ -346,8 +346,6 @@ div.extraPadding{
   height: 500px;
 }
 
-
-
 /************  Policy Section *************/
 
 
@@ -534,7 +532,7 @@ div.extraPadding{
 
 	z-index: 0;
 	color: white;
-	
+
 	font-weight: 500;
 }
 
@@ -548,7 +546,7 @@ div.extraPadding{
 	padding-left: 20px;
 	line-height: 80px;
 	float: left;
-	
+
 }
 
 #mFooter img{
@@ -577,7 +575,7 @@ div.extraPadding{
 	line-height: 30px;
 	color: white;
 	top: 0;
-	
+
 }
 
 
