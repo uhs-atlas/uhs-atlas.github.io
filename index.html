@@ -183,14 +183,6 @@
 						<div id="mStaffInfoAlexa" style="width: 100%; padding: 10px; display: none"></div>
 						<div class="mStaffMember" onclick="mStaffSelection(4)" id="mStaffJake"><img src="staffJake.jpg" id="staffPicJake"/></div>
 						<div id="mStaffInfoJake" style="width: 100%; padding: 10px; display: none"></div>
-
-						<div id="mStaffInfo" style="width: 100%; padding: 10px; display: none">
-							<h3>Molly Dostalik - Supreme Leader</h3>
-							<p></p>
-							<p>Molly Dostalik is a fighter and has always been a fighter. She has fought against the outrageous demands of her loving owner, whether it be fighting her way out of a bathtub, or fighting her way out late night Sonic Dates. While her owner may see this as rude selfishness, she sees it as an expression of her independence, an independence she has spent eight years fighting for, because she is a fighter</p>
-							<p>Quote: "Why the fuck am I in this bathtub?"</p>
-						</div>
-
 				</div>
 
 			</div>
@@ -571,40 +563,35 @@
 				if (staffInfoOn == 0){
 					staffInfoOn = 1;
 					if (choose == 0){
-						/*$("#mStaffJared").fadeOut();
-						$("#mStaffJulia").fadeOut();
-						$("#mStaffAlexa").fadeOut();
-						$("#mStaffJake").fadeOut();*/
 						$("#mStaffWill").animate({marginTop: '0px'});
 						document.getElementById('mStaffWill').style.opacity = '1.0';
 						document.getElementById('mStaffInfoWill').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
 						$("#mStaffInfoWill").fadeIn();
 					}
 					else if (choose == 1){
-						/*$("#mStaffWill").fadeOut();
-						$("#mStaffJulia").fadeOut();
-						$("#mStaffAlexa").fadeOut();
-						$("#mStaffJake").fadeOut();*/
 						$("#mStaffJared").animate({marginTop: '0px'});
 						document.getElementById('mStaffJared').style.opacity = '1.0';
-						document.getElementById('mStaffInfoJared').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
+						document.getElementById('mStaffInfoJared').innerHTML = "<h3>Jared Bathen - President</h3><p></p><p>Introducing: Jared Bathen, Atlas President</p><p>Legend has it that he was raised by bears in Brazil, where he spent his childhood learning to fish for barracuda with his bare hands. Now, he has left home and travelled across the globe to begin a new life at University High School. Jared began illiterate, but through grizzly determination, he has become one of the great intellectual forces of the senior class. Trust in Jare-Bear!</p>"
 						$("#mStaffInfoJared").fadeIn();
 					}
 					else if (choose == 2){
-						/*$("#mStaffWill").fadeOut();
-						$("#mStaffJared").fadeOut();
-						$("#mStaffAlexa").fadeOut();
-						$("#mStaffJake").fadeOut();*/
+
 						$("#mStaffJulia").animate({marginTop: '0px'});
 						document.getElementById('mStaffJulia').style.opacity = '1.0';
-						document.getElementById('mStaffInfoJulia').innerHTML = "<h3>Will Vail - Party Chair</h3><p></p><p>Introducing: William Vail, Atlas Party Chair</p><p>Best known as 'That Stage Crew Guy', Will is a strong and capable Party Chair. He leads the Party just as he does the school: from behind the scenes. Will is always ready to host a party meeting, crawl through an air duct, or hotly discuss politics. Will can be spotted most days in his natural environment, school, striding across the quad with a notebook and walkie-talkie in hand. The only thing to remember? At the debates, Will is on first, off last.</p>"
+						document.getElementById('mStaffInfoJulia').innerHTML = "<h3>Julia Weidman - Vice-President</h3><p></p><p>Introducing: Julia Weidman, Atlas Vice President</p><p>Having spent her summers living off the land in Paraguay and Panama, Julia is well travelled and a natural born leader. She is always willing to help, whether it be with homework, policy questions, or important decisions, such as what flavor of ice cream to buy. Julia is spirited, caring, and good at math, what more could you want in a VP? Undoubtedly, Julia will continue to travel the extra mile to ensure a better tomorrow. Just remember, J-Weid is on YOUR side!</p>"
 						$("#mStaffInfoJulia").fadeIn();
 					}
 					else if (choose == 3){
-
+						$("#mStaffAlexa").animate({marginTop: '0px'});
+						document.getElementById('mStaffAlexa').style.opacity = '1.0';
+						document.getElementById('mStaffInfoAlexa').innerHTML = "<h3>Alexa Panrudkevich - Domestic Chair</h3><p></p><p>Introducing: Alexa Panrudkevich, Atlas Domestic Chair</p><p>Behold Party Altas' secret weapon. Trained by knowledge ninjas from a young age to seek out new ideas and new challenges, she spent her younger years besting the beasts of Basis. Now she prowls the shadows of UHS, seeking out ever more exotic obstacles. From the complexities of Physics C and the depths of astronomy research, she has now emerged to face another great test: American politics. Witness as she turns her unstoppable might to overcoming the greatest domestic challenges of our time. Witness as she supports the weight of this great nation. Witness Party Atlas.</p>"
+						$("#mStaffInfoAlexa").fadeIn();
 					}
 					else if (choose == 4){
-
+						$("#mStaffJake").animate({marginTop: '0px'});
+						document.getElementById('mStaffJake').style.opacity = '1.0';
+						document.getElementById('mStaffInfoJake').innerHTML = "<h3>Jake Damle - Foreign Chair</h3><p></p><p>Introducing: Jake Damle, Altas Foreign Chair</p><p>Fun fact: Jake Damle's last name does not rhyme with 'camel'. It is actually pronounced 'dom-lay'. However, not unlike the resilient camel, Jake is driven. He persist in achieving his goals and will make it very clear that nothing will stop him from reaching his desires. Jake's visions will work towards supporting the globe and he will continue to push for beliefs that benefit the masses. On top of that, Jake remains vocal in his ideals, challenging anyone to stop him. Jake Damle's last name also does not rhyme with 'best foreign chair' but he is.</p>"
+						$("#mStaffInfoJake").fadeIn();
 					}
 				}
 				else {
