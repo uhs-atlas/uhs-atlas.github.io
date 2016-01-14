@@ -149,7 +149,7 @@
 
 
 
-				<div class="row" style="margin-left: -15%; width: 130%; height:350px; overflow-x: hidden; display: block; background-color: rgb(245, 245, 245)">
+			
 
 					<div class="staffMember" onclick="staffSelection(0)" id="staffWill"><img src="staffWill.jpg" id="staffPicWill" style="margin-top: -20%; margin-left: -58%"/></div>
 					<div class="staffMember" onclick="staffSelection(1)" id="staffJared"><img src="staffJared.jpg" id="staffPicJared" style="margin-top: -10%; margin-left: -15%" /></div>
@@ -350,6 +350,12 @@
 			var mq = window.matchMedia("")
 
 			if(window.innerWidth <= 640){
+				document.getElementById('mFooter').style.display = "block"
+				document.getElementById('footer').style.display = "none"
+				
+				document.getElementById('mStaffMemberRow').style.display = "block";
+				document.getElementById('staffMemberRow').style.display = "none";
+				
 				document.getElementById('mainTitle').style.fontSize = "120px";
 				document.getElementById('mainTitle').style.lineHeight = "120px";
 				document.getElementById('mainTitle').style.paddingTop = "20%";
