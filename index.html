@@ -113,11 +113,11 @@
 		<section id="about">
 			<div class="container">
 
-				<div class="row" id="globeIcon">
-					<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-5" id="globeIcon">
 						<div  class="about-Globe animated fadeInLeft">
 		                        &nbsp;<span data-icon="&#xe045;" class="icon "></span>&nbsp;
-		                </div>
+		        </div>
 					</div>
 
 					<div class="col-md-7">
@@ -273,7 +273,7 @@
 						<a href="https://www.facebook.com/ATLAS-151033538585408/" target="_blank"><img src="facebookIcon.png" /></a>
 						<a href="https://www.instagram.com/partyatlas2016/" target="_blank"><img src="instaIcon.png" /></a>
 						<a href="https://twitter.com/atlas_uhs" target="_blank"><img src="twitterIcon.png" /></a>
-						<a href="#" target="_blank"><img src="youtubeIcon.png" /></a>
+						<a href="https://www.youtube.com/channel/UCTPWNRqpirHYA6nZfIKMDWw" target="_blank"><img src="youtubeIcon.png" /></a>
 					</div>
 				</div>
 
@@ -291,11 +291,11 @@
 
 
 
-		<div id="policyCover">
+		<div id="policyCover" style="display: none;">
 
 			<div id="policyBG" onclick="closePolicyScreen()">&nbsp;</div>
 
-			<div class="policyScreen" id="domesticScreen">
+			<div class="policyScreen" id="domesticScreen" style="display: none;">
 				<div class="policyScreenLeft" id="domesticPolicyScreen">
 					<h3>Domestic Policy</h3>
 
@@ -319,7 +319,7 @@
 				</div>
 			</div>
 
-			<div class="policyScreen" id="foreignScreen">
+			<div class="policyScreen" id="foreignScreen" style="display: none;">
 				<div class="policyScreenLeft" id="foreignPolicyScreen">
 					<h3>Foreign Policy</h3>
 
@@ -360,8 +360,19 @@
 				var mExtraPadding = document.getElementsByClassName("extraPadding");
 				document.getElementById('hero').style.height = "100%";
 
+				document.getElementById('staff').style.paddingTop = "30px";
+				document.getElementById('staff').style.paddingBottom = "0px";
 				document.getElementById('staffRow').style.paddingLeft = "15px";
 				document.getElementById('staffRow').style.paddingRight = "15px";
+
+				document.getElementById('about').style.paddingTop = "30px";
+				document.getElementById('about').style.paddingBottom = "30px";
+
+				document.getElementById('policy').style.paddingTop = "30px";
+				document.getElementById('policy').style.paddingBottom = "30px";
+
+				document.getElementById('overview').style.paddingTop = "30px";
+				document.getElementById('overview').style.paddingBottom = "30px";
 
 				for (var i = 0, max = mExtraPadding.length; i < max; i++) {
 					mExtraPadding[i].style.paddingLeft = 20 + "px";
@@ -370,10 +381,6 @@
 			}
 			//var backgrounds = new Array('url(blueMts.jpeg)', 'url(rocky.jpeg)', 'url(costal.jpeg)', 'url(bgMaybe.jpeg)', 'url(dear.jpeg)', 'url(dusk.jpeg)', 'url(purple.jpeg)', 'url(stars.jpeg)');
 			document.getElementById('hero').style.backgroundImage = 'url(purple.jpeg)';
-			document.getElementById('policyCover').style.display = "none";
-			document.getElementById('foreignScreen').style.display = "none";
-			document.getElementById('domesticScreen').style.display = "none";
-
 
 			function closePolicyScreen(){
 
