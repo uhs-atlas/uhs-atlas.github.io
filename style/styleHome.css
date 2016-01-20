@@ -394,7 +394,7 @@ div.extraPadding{
 }
 
 .policyScreenLeft{
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	position: relative;
 
@@ -453,7 +453,7 @@ div.extraPadding{
 }
 
 .policyScreenRight{
-	width: 70%;
+	width: 60%;
 	float: left;
 	position: relative;
 	height: 95%;
