@@ -470,6 +470,14 @@ div.extraPadding{
 	margin-right: 40px;
 }
 
+.policyScreenRight ol{
+	font-family: 'Open Sans';
+	font-size: 15px;
+	line-height: 26px;
+	color: rgba(0,0,0, 0.7);
+	margin-left: 40px;
+	margin-right: 40px;
+}
 
 
 
