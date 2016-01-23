@@ -296,13 +296,13 @@
 		
 
 
-		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none">
-			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 40px; width: 40px; margin: 0; padding: 0;"/>
+		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none; overflow-y: scroll">
+			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 30px; width: 30px; margin-left: -30px;margin-top: -30px; padding: 0;"/>
 			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
 				<h3 style="font-size: 36px">Domestic Policy</h3>
 
 				
-				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()">
+				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()" style="width: 80%;">
 					<option value="0">Federal Jobs Program</option>
 					<option value="1">Minimum Wage</option>
 					<option value="2">Welfare</option>
@@ -338,7 +338,7 @@
 					<option value="32">Voting Day</option>
 				</select>
 				
-				<select id="mForeignSelect" onchange="mSelectChangeForeign()">
+				<select id="mForeignSelect" onchange="mSelectChangeForeign()" style="width: 80%;">
 					<option value="0">Afghanistan</option>
 					<option value="1">Saudi Arabia</option>
 					<option value="2">Egypt</option>
