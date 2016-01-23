@@ -297,71 +297,71 @@
 
 
 		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none">
-			<img id="closeMPolicy" src="closeIconWhite.png" style="height: 40px; width: 40px"/>
+			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 40px; width: 40px; margin: 0; padding: 0;"/>
 			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
 				<h3 style="font-size: 36px">Domestic Policy</h3>
 
 				
-				<select id="mDomesticSelect">
-					<option onselect="domesticPlatform(0)">Federal Jobs Program</option>
-					<option onselect="domesticPlatform(1)">Minimum Wage</option>
-					<option onselect="domesticPlatform(2)">Welfare</option>
-					<option onselect="domesticPlatform(3)">Infrastructure</option>
-					<option onselect="domesticPlatform(4)">Environment - Domestic</option>
-					<option onselect="domesticPlatform(5)">Foreign Climate Change</option>
-					<option onselect="domesticPlatform(6)">Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)</option>
-					<option onselect="domesticPlatform(7)">Prison System Reforms</option>
-					<option onselect="domesticPlatform(8)">Drug Policy</option>
-					<option onselect="domesticPlatform(9)">Tort Reform</option>
-					<option onselect="domesticPlatform(10)">Domestic Surveillance & Right to Informational Privacy</option>
-					<option onselect="domesticPlatform(11)">Police Brutality</option>
-					<option onselect="domesticPlatform(12)">Pre-K and K-12 Public Education</option>
-					<option onselect="domesticPlatform(13)">Higher Education Reform</option>
-					<option onselect="domesticPlatform(14)">Agriculture</option>
-					<option onselect="domesticPlatform(15)">Genetically Modified Organisms</option>
-					<option onselect="domesticPlatform(16)">Finance Regulation</option>
-					<option onselect="domesticPlatform(17)">Corporate Regulations/Corporate Taxes</option>
-					<option onselect="domesticPlatform(18)">Freedom of the Internet & Intellectual Property Rights</option>
-					<option onselect="domesticPlatform(19)">Health Care</option>
-					<option onselect="domesticPlatform(20)">Disabilities and Age Discrimination</option>
-					<option onselect="domesticPlatform(21)">Social Security</option>
-					<option onselect="domesticPlatform(22)">NASA</option>
-					<option onselect="domesticPlatform(23)">Cancer</option>
-					<option onselect="domesticPlatform(24)">Stem Cell</option>
-					<option onselect="domesticPlatform(25)">LGBTQ+</option>
-					<option onselect="domesticPlatform(26)">Equal Pay/Equal Work</option>
-					<option onselect="domesticPlatform(27)">Affirmative Action</option>
-					<option onselect="domesticPlatform(28)">Abortion</option>
-					<option onselect="domesticPlatform(29)">Physician Assisted Suicide</option>
-					<option onselect="domesticPlatform(30)">2nd Amendment Rights</option>
-					<option onselect="domesticPlatform(31)">Campaign Finance Reform</option>
-					<option onselect="domesticPlatform(32)">Voting Day</option>
+				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()">
+					<option value="0">Federal Jobs Program</option>
+					<option value="1">Minimum Wage</option>
+					<option value="2">Welfare</option>
+					<option value="3">Infrastructure</option>
+					<option value="4">Environment - Domestic</option>
+					<option value="5">Foreign Climate Change</option>
+					<option value="6">Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)</option>
+					<option value="7">Prison System Reforms</option>
+					<option value="8">Drug Policy</option>
+					<option value="9">Tort Reform</option>
+					<option value="10">Domestic Surveillance & Right to Informational Privacy</option>
+					<option value="11">Police Brutality</option>
+					<option value="12">Pre-K and K-12 Public Education</option>
+					<option value="13">Higher Education Reform</option>
+					<option value="14">Agriculture</option>
+					<option value="15">Genetically Modified Organisms</option>
+					<option value="16">Finance Regulation</option>
+					<option value="17">Corporate Regulations/Corporate Taxes</option>
+					<option value="18">Freedom of the Internet & Intellectual Property Rights</option>
+					<option value="19">Health Care</option>
+					<option value="20">Disabilities and Age Discrimination</option>
+					<option value="21">Social Security</option>
+					<option value="22">NASA</option>
+					<option value="23">Cancer</option>
+					<option value="24">Stem Cell</option>
+					<option value="25">LGBTQ+</option>
+					<option value="26">Equal Pay/Equal Work</option>
+					<option value="27">Affirmative Action</option>
+					<option value="28">Abortion</option>
+					<option value="29">Physician Assisted Suicide</option>
+					<option value="30">2nd Amendment Rights</option>
+					<option value="31">Campaign Finance Reform</option>
+					<option value="32">Voting Day</option>
 				</select>
 				
-				<select id="mForeignSelect">
-					<option onselect="foreignPlatform(0)">Afghanistan</option>
-					<option onselect="foreignPlatform(1)">Saudi Arabia</option>
-					<option onselect="foreignPlatform(2)">Egypt</option>
-					<option onselect="foreignPlatform(3)">Turkey</option>
-					<option onselect="foreignPlatform(4)">Syrian Refugees</option>
-					<option onselect="foreignPlatform(5)">ISIS</option>
-					<option onselect="foreignPlatform(6)">Israel/Palestine</option>
-					<option onselect="foreignPlatform(7)">Nuclear Non-Proliferation</option>
-					<option onselect="foreignPlatform(8)">Global Humanitarian Aid</option>
-					<option onselect="foreignPlatform(9)">Maritime Law</option>
-					<option onselect="foreignPlatform(10)">UN Reform</option>
-					<option onselect="foreignPlatform(11)">World Trade Agreements</option>
-					<option onselect="foreignPlatform(12)">Exploitive Labor Practices</option>
-					<option onselect="foreignPlatform(13)">Pakistan-India Conflict</option>
-					<option onselect="foreignPlatform(14)">Cuba</option>
-					<option onselect="foreignPlatform(15)">Drug Trafficking</option>
-					<option onselect="foreignPlatform(16)">Human Trafficking</option>
-					<option onselect="foreignPlatform(17)">Illegal Immigration</option>
-					<option onselect="foreignPlatform(18)">Myanmar</option>
-					<option onselect="foreignPlatform(19)">South China Sea</option>
-					<option onselect="foreignPlatform(20)">China</option>
-					<option onselect="foreignPlatform(21)">Russia</option>
-					<option onselect="foreignPlatform(22)">African Development and Counter-Terrorism</option>
+				<select id="mForeignSelect" onchange="mSelectChangeForeign()">
+					<option value="0">Afghanistan</option>
+					<option value="1">Saudi Arabia</option>
+					<option value="2">Egypt</option>
+					<option value="3">Turkey</option>
+					<option value="4">Syrian Refugees</option>
+					<option value="5">ISIS</option>
+					<option value="6">Israel/Palestine</option>
+					<option value="7">Nuclear Non-Proliferation</option>
+					<option value="8">Global Humanitarian Aid</option>
+					<option value="9">Maritime Law</option>
+					<option value="10">UN Reform</option>
+					<option value="11">World Trade Agreements</option>
+					<option value="12">Exploitive Labor Practices</option>
+					<option value="13">Pakistan-India Conflict</option>
+					<option value="14">Cuba</option>
+					<option value="15">Drug Trafficking</option>
+					<option value="16">Human Trafficking</option>
+					<option value="17">Illegal Immigration</option>
+					<option value="18">Myanmar</option>
+					<option value="19">South China Sea</option>
+					<option value="20">China</option>
+					<option value="21">Russia</option>
+					<option value="22">African Development and Counter-Terrorism</option>
 				</select>
 				
 
@@ -465,9 +465,25 @@
 		<script>
 
 
+
+			function mSelectChangeDomestic(){
+				domesticPlatform(document.getElementById('mDomesticSelect').value)
+			}
+			
+			function mSelectChangeForeign(){
+				foreignPlatform(document.getElementById('mForeignSelect').value)
+			}
+
+
+
+			function closeMPolicy(){
+				$("#mDomesticScreen").fadeOut();
+			}
+
+
 			function openForeign(){
 
-			if(window.innerWidth <= 640){
+				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mDomesticSelect').style.display = 'none';
 				}
