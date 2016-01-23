@@ -467,6 +467,10 @@
 
 			function openForeign(){
 
+			if(window.innerWidth <= 640){
+					$("#mDomesticScreen").fadeIn();
+					document.getElementById('mDomesticSelect').style.display = 'none';
+				}
 				$("#policyCover").fadeIn();
 				$("#policyBG").fadeIn();
 				$("#foreignScreen").fadeIn();
@@ -524,6 +528,7 @@
 			function openDomestic(){
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
+					document.getElementById('mForeignSelect').style.display = 'none';
 				}
 				else{
 					$("#policyCover").fadeIn();
@@ -815,4 +820,5 @@
 	</body>
 
 </html>
+
 
