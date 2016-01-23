@@ -291,6 +291,92 @@
 
 
 
+
+
+		
+
+
+		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none">
+			<img id="closeMPolicy" src="closeIconWhite.png" />
+			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
+				<h3>Domestic Policy</h3>
+
+				
+				<select id="mDomesticSelect">
+					<option onclick="domesticPlatform(0)">Federal Jobs Program</option>
+					<option onclick="domesticPlatform(1)">Minimum Wage</option>
+					<option onclick="domesticPlatform(2)">Welfare</option>
+					<option onclick="domesticPlatform(3)">Infrastructure</option>
+					<option onclick="domesticPlatform(4)">Environment - Domestic</option>
+					<option onclick="domesticPlatform(5)">Foreign Climate Change</option>
+					<option onclick="domesticPlatform(6)">Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)</option>
+					<option onclick="domesticPlatform(7)">Prison System Reforms</option>
+					<option onclick="domesticPlatform(8)">Drug Policy</option>
+					<option onclick="domesticPlatform(9)">Tort Reform</option>
+					<option onclick="domesticPlatform(10)">Domestic Surveillance & Right to Informational Privacy</option>
+					<option onclick="domesticPlatform(11)">Police Brutality</option>
+					<option onclick="domesticPlatform(12)">Pre-K and K-12 Public Education</option>
+					<option onclick="domesticPlatform(13)">Higher Education Reform</option>
+					<option onclick="domesticPlatform(14)">Agriculture</option>
+					<option onclick="domesticPlatform(15)">Genetically Modified Organisms</option>
+					<option onclick="domesticPlatform(16)">Finance Regulation</option>
+					<option onclick="domesticPlatform(17)">Corporate Regulations/Corporate Taxes</option>
+					<option onclick="domesticPlatform(18)">Freedom of the Internet & Intellectual Property Rights</option>
+					<option onclick="domesticPlatform(19)">Health Care</option>
+					<option onclick="domesticPlatform(20)">Disabilities and Age Discrimination</option>
+					<option onclick="domesticPlatform(21)">Social Security</option>
+					<option onclick="domesticPlatform(22)">NASA</option>
+					<option onclick="domesticPlatform(23)">Cancer</option>
+					<option onclick="domesticPlatform(24)">Stem Cell</option>
+					<option onclick="domesticPlatform(25)">LGBTQ+</option>
+					<option onclick="domesticPlatform(26)">Equal Pay/Equal Work</option>
+					<option onclick="domesticPlatform(27)">Affirmative Action</option>
+					<option onclick="domesticPlatform(28)">Abortion</option>
+					<option onclick="domesticPlatform(29)">Physician Assisted Suicide</option>
+					<option onclick="domesticPlatform(30)">2nd Amendment Rights</option>
+					<option onclick="domesticPlatform(31)">Campaign Finance Reform</option>
+					<option onclick="domesticPlatform(32)">Voting Day</option>
+				</select>
+				
+				<select id="mForeignSelect">
+					<option onclick="foreignPlatform(0)">Afghanistan</option>
+					<option onclick="foreignPlatform(1)">Saudi Arabia</option>
+					<option onclick="foreignPlatform(2)">Egypt</option>
+					<option onclick="foreignPlatform(3)">Turkey</option>
+					<option onclick="foreignPlatform(4)">Syrian Refugees</option>
+					<option onclick="foreignPlatform(5)">ISIS</option>
+					<option onclick="foreignPlatform(6)">Israel/Palestine</option>
+					<option onclick="foreignPlatform(7)">Nuclear Non-Proliferation</option>
+					<option onclick="foreignPlatform(8)">Global Humanitarian Aid</option>
+					<option onclick="foreignPlatform(9)">Maritime Law</option>
+					<option onclick="foreignPlatform(10)">UN Reform</option>
+					<option onclick="foreignPlatform(11)">World Trade Agreements</option>
+					<option onclick="foreignPlatform(12)">Exploitive Labor Practices</option>
+					<option onclick="foreignPlatform(13)">Pakistan-India Conflict</option>
+					<option onclick="foreignPlatform(14)">Cuba</option>
+					<option onclick="foreignPlatform(15)">Drug Trafficking</option>
+					<option onclick="foreignPlatform(16)">Human Trafficking</option>
+					<option onclick="foreignPlatform(17)">Illegal Immigration</option>
+					<option onclick="foreignPlatform(18)">Myanmar</option>
+					<option onclick="foreignPlatform(19)">South China Sea</option>
+					<option onclick="foreignPlatform(20)">China</option>
+					<option onclick="foreignPlatform(21)">Russia</option>
+					<option onclick="foreignPlatform(22)">African Development and Counter-Terrorism</option>
+				</select>
+				
+
+			</div>
+
+			<div class="mPolicyScreenBody" id="mPolicyContent">
+				
+			</div>
+		</div>
+
+
+
+
+
+
 		<div id="policyCover" style="display: none;">
 
 			<div id="policyBG" onclick="closePolicyScreen()">&nbsp;</div>
@@ -346,9 +432,6 @@
 				<div class="policyScreenLeft" id="foreignPolicyScreen" style="overflow-x:auto;">
 					<h3>Foreign Policy</h3>
 					<a onclick="foreignPlatform(0)">Afghanistan</a>
-					<a onclick="foreignPlatform(1)">Saudi Arabia</a>
-					<a onclick="foreignPlatform(2)">Egypt</a>
-					<a onclick="foreignPlatform(3)">Turkey</a>
 					<a onclick="foreignPlatform(4)">Syrian Refugees</a>
 					<a onclick="foreignPlatform(5)">ISIS</a>
 					<a onclick="foreignPlatform(6)">Israel/Palestine</a>
@@ -360,14 +443,15 @@
 					<a onclick="foreignPlatform(12)">Exploitive Labor Practices</a>
 					<a onclick="foreignPlatform(13)">Pakistan-India Conflict</a>
 					<a onclick="foreignPlatform(14)">Cuba</a>
-					<a onclick="foreignPlatform(15)">Drug Trafficking</a>
-					<a onclick="foreignPlatform(16)">Human Trafficking</a>
+					
 					<a onclick="foreignPlatform(17)">Illegal Immigration</a>
 					<a onclick="foreignPlatform(18)">Myanmar</a>
-					<a onclick="foreignPlatform(19)">South China Sea</a>
-					<a onclick="foreignPlatform(20)">China</a>
+					<a onclick="foreignPlatform(24)">China</a>
 					<a onclick="foreignPlatform(21)">Russia</a>
 					<a onclick="foreignPlatform(22)">African Development and Counter-Terrorism</a>
+					<a onclick="foreignPlatform(23)">Drug and Human Trafficking</a>
+					
+					<a onclick="foreignPlatform(25)">Middle Eastern Allied Nations</a>
 				</div>
 
 				<div class="policyScreenRight" id="foreignContent">
@@ -376,9 +460,20 @@
 				</div>
 			</div>
 		</div>
+	
 
 		<script>
 
+
+			function openForeign(){
+
+				$("#policyCover").fadeIn();
+				$("#policyBG").fadeIn();
+				$("#foreignScreen").fadeIn();
+
+			}
+
+			
 			if(window.innerWidth <= 640){
 				document.getElementById('mFooter').style.display = "block";
 				document.getElementById('footer').style.display = "none";
@@ -414,11 +509,11 @@
 					mExtraPadding[i].style.paddingRight = 20 + "px";
 				}
 			}
-			//var backgrounds = new Array('url(blueMts.jpeg)', 'url(rocky.jpeg)', 'url(costal.jpeg)', 'url(bgMaybe.jpeg)', 'url(dear.jpeg)', 'url(dusk.jpeg)', 'url(purple.jpeg)', 'url(stars.jpeg)');
+			
 			document.getElementById('hero').style.backgroundImage = 'url(purple.jpeg)';
 
 			function closePolicyScreen(){
-
+				
 				$("#policyCover").fadeOut();
 				$("#policyBG").fadeOut();
 				$("#foreignScreen").fadeOut();
@@ -427,21 +522,20 @@
 			}
 
 			function openDomestic(){
-
-				$("#policyCover").fadeIn();
-				$("#policyBG").fadeIn();
-				$("#domesticScreen").fadeIn();
-
-			}
-
-			function openForeign(){
-
-				$("#policyCover").fadeIn();
-				$("#policyBG").fadeIn();
-				$("#foreignScreen").fadeIn();
+				if(window.innerWidth <= 640){
+					$("#mDomesticScreen").fadeIn();
+				}
+				else{
+					$("#policyCover").fadeIn();
+					$("#policyBG").fadeIn();
+					$("#domesticScreen").fadeIn();
+				}
+				
 
 			}
+			
 
+			
 			function foreignPlatform(chooser){
 
 				var foreignData = [
@@ -468,10 +562,28 @@
 					{title: 'China', content:'<p>Atlas will remain strong in support of our regional partners--Japan, South Korea, Myanmar, etc.--against China in the South China Sea. With the Chinese economy floundering, it is more important now than ever before to ensure that China receives the necessary support they need.  This is an opportunity for Atlas to mend relations with China by offering them support to aid their economy. The US can do this by lowering the trade difference between the two countries and giving aid to help them build infrastructure in return for human rights improvements.</p>'},
 					{title: 'Russia', content:'<p>With Russia we must put an end to the increasing tensions between our two nations.  There is no denying that there have been violations by Russia of both human rights and international borders, yet we cannot be allowed to slip back into Cold War politics. We must cooperate with Russia on issues such as the elimination of ISIS and seek peaceful compromises in Ukraine. We will do this by working with them to form a coalition government in Syria and by promoting peace talks between Russia and Ukraine. Nothing can be gained by refusing to work with Russia or attempting to isolate them again. As, such we must work with them to effectively create a more inclusive and quicker solution.</p>'},
 					{title: 'African Development and Counter-Terrorism', content:'<p>Atlas is committed to combating global terrorism and will work with friendly actors in Nigeria, Somalia, Yemen, and Libya by establishing 4 nation level ROADMAPS (Reconstruction and Organization for Accelerated Development through Military Assistance Programs) forces to assist with the elimination of terrorist factions.  We will establish smaller quick reaction teams in neighboring nations to stop the spread of these terrorist organizations. These forces will work in tandem with local forces and and cooperate with local governments; they will not take unilateral action. Atlas will also give $50 million to ROADMAPS, a program designed to help the US meet with leaders and governments looking to expand or strengthen democracy and help with the drafting of constitutions and the effective transfer of power. This program would be voluntary for governments to participate in. Additionally there will be $50 million dedicated to the development of clean power and infrastructure for African countries. This funding is on top of the basic aid we give in the form of food, medicine, and basic supplies that we give every year. In total,  $1 billion will allocated to development programs in Africa.</p>'},
+					{title: 'Trafficking', content:'<p>Drug Trafficking</p><p>Atlas will dedicate $25.6 billion towards the prevention of Drug Trafficking, which will be taken in a three pronged approach. The first step will be to provide rehabilitation opportunities for citizens who need it and offer education on the consequences of drug use and drug trafficking. The second step will be to enhance current border patrol operations to inhibit the transmission of illegal drugs across all U.S. borders. The third step will be to cooperate with foreign allies to create a more direct approach to combatting illegal drug cartels. Atlas will specifically work with Mexico, Peru, Bolivia, and Columbia to target production plants in those nations using their military assets and our intelligence assets and Special Forces units.</p><br><p>Human Trafficking</p><p>Atlas will allocate $44 million to fight human trafficking.  This money will go to supporting anti-human trafficking task forces, providing aid to human trafficking victims, and increasing research funds of state and local justice agencies.</p>'},
+					{title: 'China', content:'<p>Atlas will remain strong in support of our regional partners--Japan, South Korea, Myanmar, etc.--against China in the South China Sea. With the Chinese economy floundering, it is more important now than ever before to ensure that China receives the necessary support they need.  This is an opportunity for Atlas to mend relations with China by offering them support to aid their economy. The US can do this by lowering the trade difference between the two countries and giving aid to help them build infrastructure in return for human rights improvements.</p><br><p>South China Sea</p><p>Atlas will take a more aggressive stance in combating Chinese encroachment in the South China Sea via diplomatic channels. This will help de-escalate the issue militarily and prevent armed conflict between China and US allies.</p>'},
+					{title: 'Middle Eastern Allied Countries', content:'<p>Saudi Arabia</p><p>Atlas supports the new Saudi Arabian monarch, King Salman. We complement the nation on its recent progress in allowing women to vote and hold office and in ending certain practices of exploitive labor. Atlas will work to further improve human rights through external pressure and oversight. Atlas will continue its aid funding of $7 billion to Saudi Arabia mostly going to the military and small human rights organizations.</p><br><p>Egypt</p><p>Atlas will continue giving aid to the Egyptian military and humanitarian organizations and support to the al-Sisi government in its attempts to foster peace in the region. Atlas will push for greater tolerance of Muslims inside the country and attempt to stop religious persecution. US funding of Egypt will total to approximately $1.5 billion.</p><br><p>Turkey</p><p>Atlas will cut military relations with Turkey--noting its abuses of Kurds--to ensure the effective formation of a coalition government in Syria. However, Atlas will continue to fund Syrian refugee programs in the country.</p>'},
 				]
-
-				document.getElementById('foreignContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3>' + foreignData[chooser].content
+				
+				if(window.innerWidth <= 640){
+					document.getElementById('mPolicyContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3>' + foreignData[chooser].content
+				}
+				else{
+					document.getElementById('foreignContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3>' + foreignData[chooser].content
+				}
 			}
+			
+			
+
+
+
+
+
+
+
+
 
 			function domesticPlatform(chooser){
 				var domesticData = [
@@ -510,8 +622,13 @@
 					{title: 'Voting Day', content:'<p>Atlas will make all Federal elections Federal Holidays. This will increase voter participation from approximately 55%. We will invest $250 million a year in a fund to make this possible.</p>'},
 				]
 
+				if(window.innerWidth <= 640){
+					document.getElementById('mPolicyContent').innerHTML = = '<h3>' + domesticData[chooser].title + '</h3>' + domesticData[chooser].content
+				}
+				else{
+					document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3>' + domesticData[chooser].content
 
-				document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3>' + domesticData[chooser].content
+				}
 			}
 
 			var staffInfoOn = 0;
@@ -692,8 +809,10 @@
 				}
 
 			}
+			
 
 		</script>
 	</body>
 
 </html>
+
