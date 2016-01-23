@@ -299,7 +299,7 @@
 		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none; overflow-y: scroll">
 			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 30px; width: 30px; margin-left: -30px;margin-top: -30px; padding: 0;"/>
 			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
-				<h3 style="font-size: 36px">Domestic Policy</h3>
+				<h3 style="font-size: 36px" id="mPolicyTitle">Domestic Policy</h3>
 
 				
 				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()" style="width: 80%; margin-left: 10%">
@@ -486,10 +486,13 @@
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mDomesticSelect').style.display = 'none';
+					document.getElementById('mPolicyTitle').innerHTML = 'Foreign Policy';
 				}
-				$("#policyCover").fadeIn();
-				$("#policyBG").fadeIn();
-				$("#foreignScreen").fadeIn();
+				else{
+					$("#policyCover").fadeIn();
+					$("#policyBG").fadeIn();
+					$("#foreignScreen").fadeIn();
+				}
 
 			}
 
@@ -545,6 +548,7 @@
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mForeignSelect').style.display = 'none';
+					document.getElementById('mPolicyTitle').innerHTML = 'Domestic Policy';
 				}
 				else{
 					$("#policyCover").fadeIn();
