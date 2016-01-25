@@ -297,9 +297,9 @@
 
 
 		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none; overflow-y: scroll">
-			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 30px; width: 30px; margin-left: -30px;margin-top: -30px; padding: 0;"/>
+			<img id="closeMPolicy" src="closeIconWhite.png" onclick="mClosePolicy()" style="height: 30px; width: 30px; margin-left: -30px;margin-top: -30px; padding: 0;"/>
 			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
-				<h3 style="font-size: 36px" id="mPolicyTitle">Domestic Policy</h3>
+				<h3 style="font-size: 33px" id="mPolicyTitle">Domestic Policy</h3>
 
 
 				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()" style="width: 80%; margin-left: 10%">
@@ -471,12 +471,12 @@
 			}
 
 			function mSelectChangeForeign(){
-				foreignPlatform(document.getElementById('mForeignSelect').value)
+				foreignPlatform(document.getElementById('mForeignSelect').value);
 			}
 
 
 
-			function closeMPolicy(){
+			function mClosePolicy(){
 				$("#mDomesticScreen").fadeOut();
 			}
 
@@ -486,7 +486,9 @@
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mDomesticSelect').style.display = 'none';
+					document.getElementById('mForeignSelect').style.display = 'block';
 					document.getElementById('mPolicyTitle').innerHTML = 'Foreign Policy';
+					document.getElementById('mPolicyContent').innerHTML	= '<p>Atlas will maintain the current troop strength of 10,000 active soldiers to train and equip the Afghan military. These soldiers will not take on aggressive combat operations. Atlas will continue with all other current military funding and humanitarian aid to the region as well while increasing infrastructure aid, focusing particularly on Afghanistan’s failing health systems. Overall, Afghanistan funding will total to $17.7 billion. We will attempt to help the people in the region by offering medical coverage through military operations and offering aid to privately build hospitals and train health professionals. The fall of Kunduz to the taliban is a demonstration that we cannot ignore, as the fight is not yet over, and the Afghan army is beginning to have the necessary skills to fight back.  It is important to understand, however,  that no amount of military strength can defeat the Taliban. Only concerted social efforts and development of infrastructure can lead to their ultimate defeat.  Only when people feel that the Afghan government and western intervention have helped improve their lives will the Taliban lose the support of their followers.</p>';
 				}
 				else{
 					$("#policyCover").fadeIn();
@@ -548,7 +550,9 @@
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mForeignSelect').style.display = 'none';
+					document.getElementById('mDomesticSelect').style.display = 'block';
 					document.getElementById('mPolicyTitle').innerHTML = 'Domestic Policy';
+					document.getElementById('mPolicyContent').innerHTML = '<p>Atlas will guarantee every American citizen a job in a federal jobs program. This program will act as an investment of human capital towards the improvement of America\'s aging infrastructure, the rejuvenation of American Industry, and a move towards a greener society. The job will provide the new minimum wage of $12/hour for 40 hours a week for 50 weeks a year totaling to $24,000/year. To fund this Atlas will commit $163.2 billion/year to provide approximately 6.8 million jobs. This means that Atlas will mandate that states cut unemployment benefits from their current duration of 26 weeks to 12 weeks. If states do not meet this mandate, they will not receive benefit from the infrastructure investment program. Those who participate in this program will also benefit from a $25 billion investment in workforce education so that they may seek higher paying employment in the private sector. They may receive training in areas such as environmental technologies, basic engineering, computer science, and material sciences, and basic data entry. This is designed to help the structurally unemployed and help modernize the American workforce.</p>';
 				}
 				else{
 					$("#policyCover").fadeIn();
@@ -559,7 +563,10 @@
 
 			}
 
-
+			function closeMPolicy(){
+				$("#mDomesticScreen").fadeOut();
+				document.getElementById('mForeignSelect').style.display = 'none';
+			}
 
 			function foreignPlatform(chooser){
 
@@ -593,22 +600,12 @@
 				]
 
 				if(window.innerWidth <= 640){
-					document.getElementById('mPolicyContent').innerHTML = '<h3 style="font-size: 18px">' + foreignData[chooser].title + '</h3>' + '<span style="font-size: 12px">' + foreignData[chooser].content +'</span>'
+					document.getElementById('mPolicyContent').innerHTML = foreignData[chooser].content
 				}
 				else{
 					document.getElementById('foreignContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3>' + foreignData[chooser].content
 				}
 			}
-
-
-
-
-
-
-
-
-
-
 
 			function domesticPlatform(chooser){
 				var domesticData = [
@@ -648,7 +645,7 @@
 				]
 
 				if(window.innerWidth <= 640){
-					document.getElementById('mPolicyContent').innerHTML = '<h3 style="font-size: 18px">' + domesticData[chooser].title + '</h3>' + '<span style="font-size: 12px">' + domesticData[chooser].content +'</span>'
+					document.getElementById('mPolicyContent').innerHTML = domesticData[chooser].content
 				}
 				else{
 					document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3>' + domesticData[chooser].content

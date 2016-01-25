@@ -1016,25 +1016,9 @@ div.extraPadding{
 
 .icon-dribbble:before {
   content: "\e063"; }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+/* MOBILE POLICY MENUS */
+
   #closeMPolicy{
 				position: absolute;
 				top: 40px;
@@ -1056,7 +1040,7 @@ div.extraPadding{
 				z-index: 5000000;
 				top: 0;
 				left: 0;
-				
+
 			}
 
 			#mForeignPolicyScreen{
@@ -1075,6 +1059,7 @@ div.extraPadding{
 				/*background-color: rgb(40, 154, 214);*/
 
 				float: left;
+        padding-bottom: 30px;
 
 			}
 
@@ -1085,17 +1070,17 @@ div.extraPadding{
 				margin: 20px;
 				margin-top: 40px;
 				letter-spacing: 1.1;
-				font-size: 64px;
+				font-size: 20px;
 				text-align: center;
 			}
 
 			.mPolicyScreenHead a{
 				color: rgba(255,255,255,.8);
-				font-family: 'Open Sans';
+				font-family: 'Helvetica Neue';
 				font-weight: 500;
 				letter-spacing: 1.1;
 				font-size: 16px;
-				line-height: 28px;
+				line-height: 29px;
 
 				text-decoration: none;
 				margin-left: 40px;
@@ -1122,7 +1107,7 @@ div.extraPadding{
 			}*/
 
 			.mPolicyScreenHead label select {
-		    padding:3px;
+		    padding:5px;
 		    margin-top: 60px;
 				margin-bottom: 60px;
 				width: 80%;
@@ -1183,14 +1168,16 @@ div.extraPadding{
 				font-size: 12px;
 				line-height: 18px;
 				overflow-y: scroll;
-			    overflow-x: hidden;
+			  overflow-x: hidden;
+        padding-top: 15px;
 			}
 
 			.mPolicyScreenBody p{
 				font-family: 'Open Sans';
-				font-size: 12px;
-				line-height: 18px;
+				font-size: 16px;
+				line-height: 24px;
 				color: rgba(0,0,0, 0.7);
 				margin-left: 20px;
 				margin-right: 20px;
+        margin-bottom: 20px;
 			}
