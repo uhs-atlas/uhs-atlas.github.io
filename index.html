@@ -113,11 +113,11 @@
 		<section id="about">
 			<div class="container">
 
-				<div class="row" id="globeIcon">
-					<div class="col-md-5">
+				<div class="row">
+					<div class="col-md-5" id="globeIcon">
 						<div  class="about-Globe animated fadeInLeft">
 		                        &nbsp;<span data-icon="&#xe045;" class="icon "></span>&nbsp;
-		                </div>
+		        </div>
 					</div>
 
 					<div class="col-md-7">
@@ -239,7 +239,7 @@
 						<a href="https://www.facebook.com/ATLAS-151033538585408/" target="_blank"><img src="facebookIcon.png" /></a>
 						<a href="https://www.instagram.com/partyatlas2016/" target="_blank"><img src="instaIcon.png" /></a>
 						<a href="https://twitter.com/atlas_uhs" target="_blank"><img src="twitterIcon.png" /></a>
-						<a href="#" target="_blank"><img src="youtubeIcon.png" /></a>
+						<a href="https://www.youtube.com/channel/UCTPWNRqpirHYA6nZfIKMDWw" target="_blank"><img src="youtubeIcon.png" /></a>
 					</div>
 
 
@@ -273,7 +273,7 @@
 						<a href="https://www.facebook.com/ATLAS-151033538585408/" target="_blank"><img src="facebookIcon.png" /></a>
 						<a href="https://www.instagram.com/partyatlas2016/" target="_blank"><img src="instaIcon.png" /></a>
 						<a href="https://twitter.com/atlas_uhs" target="_blank"><img src="twitterIcon.png" /></a>
-						<a href="#" target="_blank"><img src="youtubeIcon.png" /></a>
+						<a href="https://www.youtube.com/channel/UCTPWNRqpirHYA6nZfIKMDWw" target="_blank"><img src="youtubeIcon.png" /></a>
 					</div>
 				</div>
 
@@ -291,59 +291,212 @@
 
 
 
-		<div id="policyCover">
+
+
+		
+
+
+		<div class="mPolicyScreen" id="mDomesticScreen" style="display: none; overflow-y: scroll">
+			<img id="closeMPolicy" src="closeIconWhite.png" onclick="closeMPolicy()" style="height: 30px; width: 30px; margin-left: -30px;margin-top: -30px; padding: 0;"/>
+			<div class="mPolicyScreenHead" id="mDomesticPolicyScreen">
+				<h3 style="font-size: 36px" id="mPolicyTitle">Domestic Policy</h3>
+
+				
+				<select id="mDomesticSelect" onchange="mSelectChangeDomestic()" style="width: 80%; margin-left: 10%">
+					<option value="0">Federal Jobs Program</option>
+					<option value="1">Minimum Wage</option>
+					<option value="2">Welfare</option>
+					<option value="3">Infrastructure</option>
+					<option value="4">Environment - Domestic</option>
+					<option value="5">Foreign Climate Change</option>
+					<option value="6">Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)</option>
+					<option value="7">Prison System Reforms</option>
+					<option value="8">Drug Policy</option>
+					<option value="9">Tort Reform</option>
+					<option value="10">Domestic Surveillance & Right to Informational Privacy</option>
+					<option value="11">Police Brutality</option>
+					<option value="12">Pre-K and K-12 Public Education</option>
+					<option value="13">Higher Education Reform</option>
+					<option value="14">Agriculture</option>
+					<option value="15">Genetically Modified Organisms</option>
+					<option value="16">Finance Regulation</option>
+					<option value="17">Corporate Regulations/Corporate Taxes</option>
+					<option value="18">Freedom of the Internet & Intellectual Property Rights</option>
+					<option value="19">Health Care</option>
+					<option value="20">Disabilities and Age Discrimination</option>
+					<option value="21">Social Security</option>
+					<option value="22">NASA</option>
+					<option value="23">Cancer</option>
+					<option value="24">Stem Cell</option>
+					<option value="25">LGBTQ+</option>
+					<option value="26">Equal Pay/Equal Work</option>
+					<option value="27">Affirmative Action</option>
+					<option value="28">Abortion</option>
+					<option value="29">Physician Assisted Suicide</option>
+					<option value="30">2nd Amendment Rights</option>
+					<option value="31">Campaign Finance Reform</option>
+					<option value="32">Voting Day</option>
+				</select>
+				
+				<select id="mForeignSelect" onchange="mSelectChangeForeign()" style="width: 80%; margin-left: 10%">
+					<option value="0">Afghanistan</option>
+					<option value="1">Saudi Arabia</option>
+					<option value="2">Egypt</option>
+					<option value="3">Turkey</option>
+					<option value="4">Syrian Refugees</option>
+					<option value="5">ISIS</option>
+					<option value="6">Israel/Palestine</option>
+					<option value="7">Nuclear Non-Proliferation</option>
+					<option value="8">Global Humanitarian Aid</option>
+					<option value="9">Maritime Law</option>
+					<option value="10">UN Reform</option>
+					<option value="11">World Trade Agreements</option>
+					<option value="12">Exploitive Labor Practices</option>
+					<option value="13">Pakistan-India Conflict</option>
+					<option value="14">Cuba</option>
+					<option value="15">Drug Trafficking</option>
+					<option value="16">Human Trafficking</option>
+					<option value="17">Illegal Immigration</option>
+					<option value="18">Myanmar</option>
+					<option value="19">South China Sea</option>
+					<option value="20">China</option>
+					<option value="21">Russia</option>
+					<option value="22">African Development and Counter-Terrorism</option>
+				</select>
+				
+
+			</div>
+
+			<div class="mPolicyScreenBody" id="mPolicyContent">
+				
+			</div>
+		</div>
+
+
+
+
+
+
+		<div id="policyCover" style="display: none;">
 
 			<div id="policyBG" onclick="closePolicyScreen()">&nbsp;</div>
 
-			<div class="policyScreen" id="domesticScreen">
-				<div class="policyScreenLeft" id="domesticPolicyScreen">
+			<div class="policyScreen" id="domesticScreen" style="display: none;">
+				<div class="policyScreenLeft" id="domesticPolicyScreen" style="overflow-x:auto;">
 					<h3>Domestic Policy</h3>
 
-					<a onclick="domesticPlatform(0)">Russia</a>
-					<a onclick="domesticPlatform(1)">Latin America</a>
-					<a onclick="domesticPlatform(2)">Eastern Europe</a>
-					<a onclick="domesticPlatform(3)">Israel/Palestine</a>
-					<a onclick="domesticPlatform(4)">ISIS</a>
-					<a onclick="domesticPlatform(5)">Iraq & Afghanistan</a>
-					<a onclick="domesticPlatform(6)">India</a>
-					<a onclick="domesticPlatform(7)">China</a>
-					<a onclick="domesticPlatform(8)">North Korea</a>
-					<a onclick="domesticPlatform(9)">AIDS</a>
+					<a onclick="domesticPlatform(0)">Federal Jobs Program</a>
+					<a onclick="domesticPlatform(1)">Minimum Wage</a>
+					<a onclick="domesticPlatform(2)">Welfare</a>
+					<a onclick="domesticPlatform(3)">Infrastructure</a>
+					<a onclick="domesticPlatform(4)">Environment - Domestic</a>
+					<a onclick="domesticPlatform(5)">Foreign Climate Change</a>
+					<a onclick="domesticPlatform(6)">Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)</a>
+					<a onclick="domesticPlatform(7)">Prison System Reforms</a>
+					<a onclick="domesticPlatform(8)">Drug Policy</a>
+					<a onclick="domesticPlatform(9)">Tort Reform</a>
+					<a onclick="domesticPlatform(10)">Domestic Surveillance & Right to Informational Privacy</a>
+					<a onclick="domesticPlatform(11)">Police Brutality</a>
+					<a onclick="domesticPlatform(12)">Pre-K and K-12 Public Education</a>
+					<a onclick="domesticPlatform(13)">Higher Education Reform</a>
+					<a onclick="domesticPlatform(14)">Agriculture</a>
+					<a onclick="domesticPlatform(15)">Genetically Modified Organisms</a>
+					<a onclick="domesticPlatform(16)">Finance Regulation</a>
+					<a onclick="domesticPlatform(17)">Corporate Regulations/Corporate Taxes</a>
+					<a onclick="domesticPlatform(18)">Freedom of the Internet & Intellectual Property Rights</a>
+					<a onclick="domesticPlatform(19)">Health Care</a>
+					<a onclick="domesticPlatform(20)">Disabilities and Age Discrimination</a>
+					<a onclick="domesticPlatform(21)">Social Security</a>
+					<a onclick="domesticPlatform(22)">NASA</a>
+					<a onclick="domesticPlatform(23)">Cancer</a>
+					<a onclick="domesticPlatform(24)">Stem Cell</a>
+					<a onclick="domesticPlatform(25)">LGBTQ+</a>
+					<a onclick="domesticPlatform(26)">Equal Pay/Equal Work</a>
+					<a onclick="domesticPlatform(27)">Affirmative Action</a>
+					<a onclick="domesticPlatform(28)">Abortion</a>
+					<a onclick="domesticPlatform(29)">Physician Assisted Suicide</a>
+					<a onclick="domesticPlatform(30)">2nd Amendment Rights</a>
+					<a onclick="domesticPlatform(31)">Campaign Finance Reform</a>
+					<a onclick="domesticPlatform(32)">Voting Day</a>
 				</div>
 
 				<div class="policyScreenRight" id="domesticContent">
 
-					<h3>Russia</h3>
+					<h3>Federal Jobs Program</h3>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p>Atlas will guarantee every American citizen a job in a federal jobs program. This program will act as an investment of human capital towards the improvement of America\'s aging infrastructure, the rejuvenation of American Industry, and a move towards a greener society. The job will provide the new minimum wage of $12/hour for 40 hours a week for 50 weeks a year totaling to $24,000/year. To fund this Atlas will commit $163.2 billion/year to provide approximately 6.8 million jobs. This means that Atlas will mandate that states cut unemployment benefits from their current duration of 26 weeks to 12 weeks. If states do not meet this mandate, they will not receive benefit from the infrastructure investment program. Those who participate in this program will also benefit from a $25 billion investment in workforce education so that they may seek higher paying employment in the private sector. They may receive training in areas such as environmental technologies, basic engineering, computer science, and material sciences, and basic data entry. This is designed to help the structurally unemployed and help modernize the American workforce.</p>
 				</div>
 			</div>
 
-			<div class="policyScreen" id="foreignScreen">
-				<div class="policyScreenLeft" id="foreignPolicyScreen">
+			<div class="policyScreen" id="foreignScreen" style="display: none;">
+				<div class="policyScreenLeft" id="foreignPolicyScreen" style="overflow-x:auto;">
 					<h3>Foreign Policy</h3>
-
-					<a onclick="foreignPlatform(0)">Russia</a>
-					<a onclick="foreignPlatform(1)">Latin America</a>
-					<a onclick="foreignPlatform(2)">Eastern Europe</a>
-					<a onclick="foreignPlatform(3)">Israel/Palestine</a>
-					<a onclick="foreignPlatform(4)">ISIS</a>
-					<a onclick="foreignPlatform(5)">Iraq & Afghanistan</a>
-					<a onclick="foreignPlatform(6)">India</a>
-					<a onclick="foreignPlatform(7)">China</a>
-					<a onclick="foreignPlatform(8)">North Korea</a>
-					<a onclick="foreignPlatform(9)">AIDS</a>
+					<a onclick="foreignPlatform(0)">Afghanistan</a>
+					<a onclick="foreignPlatform(4)">Syrian Refugees</a>
+					<a onclick="foreignPlatform(5)">ISIS</a>
+					<a onclick="foreignPlatform(6)">Israel/Palestine</a>
+					<a onclick="foreignPlatform(7)">Nuclear Non-Proliferation</a>
+					<a onclick="foreignPlatform(8)">Global Humanitarian Aid</a>
+					<a onclick="foreignPlatform(9)">Maritime Law</a>
+					<a onclick="foreignPlatform(10)">UN Reform</a>
+					<a onclick="foreignPlatform(11)">World Trade Agreements</a>
+					<a onclick="foreignPlatform(12)">Exploitive Labor Practices</a>
+					<a onclick="foreignPlatform(13)">Pakistan-India Conflict</a>
+					<a onclick="foreignPlatform(14)">Cuba</a>
+					
+					<a onclick="foreignPlatform(17)">Illegal Immigration</a>
+					<a onclick="foreignPlatform(18)">Myanmar</a>
+					<a onclick="foreignPlatform(24)">China</a>
+					<a onclick="foreignPlatform(21)">Russia</a>
+					<a onclick="foreignPlatform(22)">African Development and Counter-Terrorism</a>
+					<a onclick="foreignPlatform(23)">Drug and Human Trafficking</a>
+					
+					<a onclick="foreignPlatform(25)">Middle Eastern Allied Nations</a>
 				</div>
 
 				<div class="policyScreenRight" id="foreignContent">
-					<h3>Russia</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h3>Afghanistan</h3>
+					<p>Atlas will maintain the current troop strength of 10,000 active soldiers to train and equip the Afghan military. These soldiers will not take on aggressive combat operations. Atlas will continue with all other current military funding and humanitarian aid to the region as well while increasing infrastructure aid, focusing particularly on Afghanistan’s failing health systems. Overall, Afghanistan funding will total to $17.7 billion. We will attempt to help the people in the region by offering medical coverage through military operations and offering aid to privately build hospitals and train health professionals. The fall of Kunduz to the taliban is a demonstration that we cannot ignore, as the fight is not yet over, and the Afghan army is beginning to have the necessary skills to fight back.  It is important to understand, however,  that no amount of military strength can defeat the Taliban. Only concerted social efforts and development of infrastructure can lead to their ultimate defeat.  Only when people feel that the Afghan government and western intervention have helped improve their lives will the Taliban lose the support of their followers.</p>
 				</div>
 			</div>
 		</div>
+	
 
 		<script>
 
+
+
+			function mSelectChangeDomestic(){
+				domesticPlatform(document.getElementById('mDomesticSelect').value)
+			}
+			
+			function mSelectChangeForeign(){
+				foreignPlatform(document.getElementById('mForeignSelect').value)
+			}
+
+
+
+			function closeMPolicy(){
+				$("#mDomesticScreen").fadeOut();
+			}
+
+
+			function openForeign(){
+
+				if(window.innerWidth <= 640){
+					$("#mDomesticScreen").fadeIn();
+					document.getElementById('mDomesticSelect').style.display = 'none';
+					document.getElementById('mPolicyTitle').innerHTML = 'Foreign Policy';
+				}
+				else{
+					$("#policyCover").fadeIn();
+					$("#policyBG").fadeIn();
+					$("#foreignScreen").fadeIn();
+				}
+
+			}
+
+			
 			if(window.innerWidth <= 640){
 				document.getElementById('mFooter').style.display = "block";
 				document.getElementById('footer').style.display = "none";
@@ -360,26 +513,37 @@
 				var mExtraPadding = document.getElementsByClassName("extraPadding");
 				document.getElementById('hero').style.height = "100%";
 
+				document.getElementById('staff').style.paddingTop = "30px";
+				document.getElementById('staff').style.paddingBottom = "0px";
 				document.getElementById('staffRow').style.paddingLeft = "15px";
 				document.getElementById('staffRow').style.paddingRight = "15px";
+
+				document.getElementById('about').style.paddingTop = "30px";
+				document.getElementById('about').style.paddingBottom = "30px";
+
+				document.getElementById('policy').style.paddingTop = "30px";
+				document.getElementById('policy').style.paddingBottom = "30px";
+
+				document.getElementById('overview').style.paddingTop = "30px";
+				document.getElementById('overview').style.paddingBottom = "30px";
 
 				for (var i = 0, max = mExtraPadding.length; i < max; i++) {
 					mExtraPadding[i].style.paddingLeft = 20 + "px";
 					mExtraPadding[i].style.paddingRight = 20 + "px";
 				}
 			}
+<<<<<<< HEAD
 
 
 
 			//var backgrounds = new Array('url(blueMts.jpeg)', 'url(rocky.jpeg)', 'url(costal.jpeg)', 'url(bgMaybe.jpeg)', 'url(dear.jpeg)', 'url(dusk.jpeg)', 'url(purple.jpeg)', 'url(stars.jpeg)');
+=======
+			
+>>>>>>> origin/master
 			document.getElementById('hero').style.backgroundImage = 'url(purple.jpeg)';
-			document.getElementById('policyCover').style.display = "none";
-			document.getElementById('foreignScreen').style.display = "none";
-			document.getElementById('domesticScreen').style.display = "none";
-
 
 			function closePolicyScreen(){
-
+				
 				$("#policyCover").fadeOut();
 				$("#policyBG").fadeOut();
 				$("#foreignScreen").fadeOut();
@@ -388,55 +552,115 @@
 			}
 
 			function openDomestic(){
-
-				$("#policyCover").fadeIn();
-				$("#policyBG").fadeIn();
-				$("#domesticScreen").fadeIn();
+				if(window.innerWidth <= 640){
+					$("#mDomesticScreen").fadeIn();
+					document.getElementById('mForeignSelect').style.display = 'none';
+					document.getElementById('mPolicyTitle').innerHTML = 'Domestic Policy';
+				}
+				else{
+					$("#policyCover").fadeIn();
+					$("#policyBG").fadeIn();
+					$("#domesticScreen").fadeIn();
+				}
+				
 
 			}
+			
 
-			function openForeign(){
-
-				$("#policyCover").fadeIn();
-				$("#policyBG").fadeIn();
-				$("#foreignScreen").fadeIn();
-
-			}
-
+			
 			function foreignPlatform(chooser){
 
 				var foreignData = [
-					{title: 'Russia', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Latin America', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Eastern Europe', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Israel/Palestine', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'ISIS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Iraq & Afghanistan', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'India', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'China', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'North Korea', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'AIDS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Afghanistan', content:'<p>Atlas will maintain the current troop strength of 10,000 active soldiers to train and equip the Afghan military. These soldiers will not take on aggressive combat operations. Atlas will continue with all other current military funding and humanitarian aid to the region as well while increasing infrastructure aid, focusing particularly on Afghanistan’s failing health systems. Overall, Afghanistan funding will total to $17.7 billion. We will attempt to help the people in the region by offering medical coverage through military operations and offering aid to privately build hospitals and train health professionals. The fall of Kunduz to the taliban is a demonstration that we cannot ignore, as the fight is not yet over, and the Afghan army is beginning to have the necessary skills to fight back.  It is important to understand, however,  that no amount of military strength can defeat the Taliban. Only concerted social efforts and development of infrastructure can lead to their ultimate defeat.  Only when people feel that the Afghan government and western intervention have helped improve their lives will the Taliban lose the support of their followers.</p>'},
+					{title: 'Saudi Arabia', content:'<p>Atlas supports the new Saudi Arabian monarch, King Salman. We complement the nation on its recent progress in allowing women to vote and hold office and in ending certain practices of exploitive labor. Atlas will work to further improve human rights through external pressure and oversight. Atlas will continue its aid funding of $7 billion to Saudi Arabia mostly going to the military and small human rights organizations.</p>'},
+					{title: 'Egypt', content:'<p>Atlas will continue giving aid to the Egyptian military and humanitarian organizations and support to the al-Sisi government in its attempts to foster peace in the region. Atlas will push for greater tolerance of Muslims inside the country and attempt to stop religious persecution. US funding of Egypt will total to approximately $1.5 billion.</p>'},
+					{title: 'Turkey', content:'<p>Atlas will cut military relations with Turkey--noting its abuses of Kurds--to ensure the effective formation of a coalition government in Syria. However, Atlas will continue to fund Syrian refugee programs in the country.</p>'},
+					{title: 'Syrian Refugees', content:'<p>The United States will increase its support of refugee camps abroad to $10 billion/year. In addition to providing international aid, the United States will take action at home and essentially match Germany’s contribution, accepting 350,000 Syrian refugees per year for the next three years, for a total of 1.05 million refugees.  This will pose a cost of approximately $5 billion per 350,00 refugees. Therefore, Atlas will allocate $5 billion in 2016, $10 billion in 2017, and $15 billion/year from 2018 to the end of the crisis.  These refugees will be accepted on a need basis; women, the elderly, orphans, and families with children will be accepted first. Prior to acceptance, each and every refugee will be vetted, undergoing a thorough exam to ensure that they are not affiliated with any Middle Eastern terrorist organization. The refugees will be relocated to cities with large Syrian support groups. In Detroit alone there are approximately 10,000 abandoned houses. Putting families in these homes will not only ensure a safe environment for the family with electricity and running water, but will also reduce crime rate and increase property values throughout Detroit. Furthermore, these refugees will not be allowed to purchase weapons in the US and will be granted refugee status.</p>'},
+					{title: 'ISIS', content:'<p>Not since WWII has the world seen atrocities so horrific as those committed by ISIS. As such, Atlas feels that we must become more involved in the situation. There is no clear solution to defeating ISIS in Syria by allying with any of the groups currently in the region. With consideration, Atlas proposes the following plan to eliminate and destroy the Islamic State in Syria. We will work with Russia and Iran to form a coalition government, between the Assad regime, moderate Syrian rebel fighters, and the Kurdish minority, which will take control of the region once ISIS is removed from power. The United States will deploy 50,000 troops to the region to participate in active combat operations. This plan will cost a total of $250 billion a year and be funded by current military spending through the cutting of redundant weapon systems, and the transferring of funds from other current military missions. We note, and fully admit that these operations will not be cheap; however, this is the right thing to do in order to save the most lives. A little sacrifice from all of our pocketbooks is well worth the lives of the innocent civilians we will help save through these actions. We will utilize Egypt, Saudi Arabia, and the 5th fleet, as Atlas’ final goal for this region is the preservation of innocent human life which, unfortunately, can only be achieved with the total annihilation of the Islamic State of Iraq and Syria through targeted warfare.</p><p>The United States has been too slow to intervene in other conflicts where the people being killed do not worship, look, or talk like we do. Not in the least among these are the Holocaust, the Rwandan genocide, the Bosnian genocide, and the slaughter of millions of Chinese by the Japanese. We must learn from these mistakes and not repeat them at the cost of innocent human life.</p>'},
+					{title: 'Israel/Palestine', content:'<p>Pre-1967 borders will be enforced with a six month notice. Troops from both nations will have these six months to return to their respective nation.  After that, troop presences will be considered an act of war.  Atlas will gladly send any aid the two nations find necessary to help expedite the process of troop removal; however, after the sixth month grace period, the United States will react to any border infringements with economic sanctions or embargos and if either nation commits acts of violence, the United States will intervene to stop the aggression.  In addition, the United States will provide aid such as intelligence and special forces to counteract violent non-state actors.  Actions taken by these non-state actors will not be considered acts of war, rather acts of terrorism.  The United States will monitor both nations in order to ensure that they are taking reasonable steps to prevent these terrorist actions.</p><p>In regards to the borders, a three year probationary period will be enacted to allow either side to submit claims to the United Nations to alter these borders.  The aforementioned pre-1967 borders would give Palestine rights to the West Bank and the Gaza Strip while Israel would control much of what they do now.  Valid reasons for a claim may include but are not limited to: a valuable natural resource currently lacking in the country while present in excess in the other country; a major cultural/historical artifact of value to one country but within the borders of and insignificant to the other.</p><p>Each nation will be allotted water allowances to end the conflict over the region’s most valuable natural resource and the United States will continue to provide both nations with equal aid of $500 million. Lastly, the city of Jerusalem will be under control of the United Nations where peacekeepers will ensure that all religious groups (Jewish, Muslim, Christian, etc.) will be allowed to come and worship without fear of persecution.</p>'},
+					{title: 'Nuclear Non-Proliferation', content:'<p>Atlas is favor of the Iran deal and will continue with the current policy adopted by the Obama administration allocating $350 million yearly. We hope this is the beginning of the reparation of US-Iran relations. With regards to North Korea, the US will attempt to use economic sanctions and Beijing’s cooling relations with North Korea to further isolate them by attempting to stem the flow of monetary assets out of the country. We will maintain funding of the IAEA and will pursue a treaty with South Africa to regulate their use of nuclear fuels.</p>'},
+					{title: 'Global Humanitarian Aid', content:'<p>Atlas will increase international Global Humanitarian Aid funding by approximately 900% to $20.8 billion. This increase will allow for Atlas to take a more active role in lifting up people in all regions, of all races and religions, of all backgrounds, and of all nationalities. Atlas will establish a stronger global community and leave no person behind.</p>'},
+					{title: 'Maritime Law', content:'<p>Atlas will encourage the United Nations to implement more stringent enforcement plans regarding maritime law. To do its part the United States will devote $2 billion a year to Operation PIRATES (Piracy Interdiction and Reducing Area and Trade Economics of Slavery) over 3 years. This will fund the construction of 10 new Freedom-class vessels and the training of the crews to staff them. These ships will form a new task devoted to combating slavery and piracy on the high seas.</p>'},
+					{title: 'UN Reform', content:'<p>Atlas will encourage the induction of Brazil as a permanent member and Germany and Japan as semi permanent members of the Security Council.</p>'},
+					{title: 'World Trade Agreements', content:'<p>Atlas will push for greater protections of American industry and greater awareness of environmental concerns. Atlas will abide by the rules set up in NAFTA and the TPP; however, we call for concessions and modifications to these agreements that will make them better for all involved.  These modifications will include provisions for environmental safety and greater punishments of unlawful trade.  There is no denying that in our haste to open borders we have ignored key issues and pushed them to the side in favor of overzealous profiteering. We will also push for reform of the WTO to be more equitable. Though this will hurt the United States in the short run, in the long run it will make the international community a more inviting place to be and create more safe free trade practices between nations.</p>'},
+					{title: 'Exploitive Labor Practices', content:'<p>Atlas is appalled at the conditions under which many workers across the globe are forced to work.  As many as, 12.3 million workers still exist in slavery and there are upwards of 168 million child laborers in the world.  Such practices must be stopped and the United States has the power to stop them. The United States will offer powerful subsidies to companies and corporation who can prove that their goods, be it clothing, food, or manufactured materials, were not produced using exploitive labor practices.   This will dissuade companies from using such labor tactics and without a demand, the supply of these will most certainly disappear. $25 billion dollars will be given to provide these subsidies.</p>'},
+					{title: 'Pakistan-India Conflict', content:'<p>Pleased by the progress the two countries have achieved independently, the US will follow through with promised aid to Pakistan in the order of $1.5 billion to combat the Taliban. Atlas will maintain a neutral stance regarding the decades-old conflict and only step in should the conflict reverse the current trend and escalate to a point of all out war.</p>'},
+					{title: 'Cuba', content:'<p>We will continue with the process of lifting the embargo and reestablishing diplomatic ties with the nation. There is no point to maintaining a cold war standoff, as it only harms both of the US and Cuban economies. Additionally, the human rights abuses in Cuba will not be solved by continued isolation.</p>'},
+					{title: 'Drug Trafficking', content:'<p>Atlas will dedicate $25.6 billion towards the prevention of Drug Trafficking, which will be taken in a three pronged approach. The first step will be to provide rehabilitation opportunities for citizens who need it and offer education on the consequences of drug use and drug trafficking. The second step will be to enhance current border patrol operations to inhibit the transmission of illegal drugs across all U.S. borders. The third step will be to cooperate with foreign allies to create a more direct approach to combatting illegal drug cartels. Atlas will specifically work with Mexico, Peru, Bolivia, and Columbia to target production plants in those nations using their military assets and our intelligence assets and Special Forces units.</p>'},
+					{title: 'Human Trafficking', content:'<p>Atlas will allocate $44 million to fight human trafficking.  This money will go to supporting anti-human trafficking task forces, providing aid to human trafficking victims, and increasing research funds of state and local justice agencies.</p>'},
+					{title: 'Illegal Immigration', content:'<p>Atlas will grant amnesty to most illegal immigrants in the US, excluding those who have a  criminal record, those who have been charged with a crime, or those who have failed to pay taxes. Those people will fall into different processes for citizenship ranging from paying fines to deportation and reapplication. In order to stop illegal immigration, Atlas will attack the problem on two fronts. Firstly, in conjunction with stopping drug trafficking, we will put more personnel along the border to stop immigrants from crossing. However, noting that it is impossible to catch everyone, Atlas will eliminate the demand for illegal labor by heavily fining companies that hire illegal immigrants. We will give businesses the ability to request proof of citizenship upon hiring and hold them responsible for breaches of this policy. Overall, these efforts will total to $26 billion.</p>'},
+					{title: 'Myanmar', content:'<p>Myanmar’s recently established civilian government is still in its earliest stages and assistance should be centered on fostering a democratic, just government. In addition, providing the tools and education required to neutralize religious tensions is a priority for the United States. Economics play a crucial role in establishing a sustainable nation and by further lifting sanctions against investments, the United States can help to give the citizens of Myanmar the tools they need to advance within the ever-growing Southeast Asian marketplace. Atlas will not stand by with the ever-looming threat of religious conflict and persecution. Atlas’ policy towards Myanmar will primarily focus on strengthening Myanmarese democracy and protecting religious and ethnic minorities.</p>'},
+					{title: 'South China Sea', content:'<p>Atlas will take a more aggressive stance in combating Chinese encroachment in the South China Sea via diplomatic channels. This will help de-escalate the issue militarily and prevent armed conflict between China and US allies.</p>'},
+					{title: 'China', content:'<p>Atlas will remain strong in support of our regional partners--Japan, South Korea, Myanmar, etc.--against China in the South China Sea. With the Chinese economy floundering, it is more important now than ever before to ensure that China receives the necessary support they need.  This is an opportunity for Atlas to mend relations with China by offering them support to aid their economy. The US can do this by lowering the trade difference between the two countries and giving aid to help them build infrastructure in return for human rights improvements.</p>'},
+					{title: 'Russia', content:'<p>With Russia we must put an end to the increasing tensions between our two nations.  There is no denying that there have been violations by Russia of both human rights and international borders, yet we cannot be allowed to slip back into Cold War politics. We must cooperate with Russia on issues such as the elimination of ISIS and seek peaceful compromises in Ukraine. We will do this by working with them to form a coalition government in Syria and by promoting peace talks between Russia and Ukraine. Nothing can be gained by refusing to work with Russia or attempting to isolate them again. As, such we must work with them to effectively create a more inclusive and quicker solution.</p>'},
+					{title: 'African Development and Counter-Terrorism', content:'<p>Atlas is committed to combating global terrorism and will work with friendly actors in Nigeria, Somalia, Yemen, and Libya by establishing 4 nation level ROADMAPS (Reconstruction and Organization for Accelerated Development through Military Assistance Programs) forces to assist with the elimination of terrorist factions.  We will establish smaller quick reaction teams in neighboring nations to stop the spread of these terrorist organizations. These forces will work in tandem with local forces and and cooperate with local governments; they will not take unilateral action. Atlas will also give $50 million to ROADMAPS, a program designed to help the US meet with leaders and governments looking to expand or strengthen democracy and help with the drafting of constitutions and the effective transfer of power. This program would be voluntary for governments to participate in. Additionally there will be $50 million dedicated to the development of clean power and infrastructure for African countries. This funding is on top of the basic aid we give in the form of food, medicine, and basic supplies that we give every year. In total,  $1 billion will allocated to development programs in Africa.</p>'},
+					{title: 'Trafficking', content:'<p>Drug Trafficking</p><p>Atlas will dedicate $25.6 billion towards the prevention of Drug Trafficking, which will be taken in a three pronged approach. The first step will be to provide rehabilitation opportunities for citizens who need it and offer education on the consequences of drug use and drug trafficking. The second step will be to enhance current border patrol operations to inhibit the transmission of illegal drugs across all U.S. borders. The third step will be to cooperate with foreign allies to create a more direct approach to combatting illegal drug cartels. Atlas will specifically work with Mexico, Peru, Bolivia, and Columbia to target production plants in those nations using their military assets and our intelligence assets and Special Forces units.</p><br><p>Human Trafficking</p><p>Atlas will allocate $44 million to fight human trafficking.  This money will go to supporting anti-human trafficking task forces, providing aid to human trafficking victims, and increasing research funds of state and local justice agencies.</p>'},
+					{title: 'China', content:'<p>Atlas will remain strong in support of our regional partners--Japan, South Korea, Myanmar, etc.--against China in the South China Sea. With the Chinese economy floundering, it is more important now than ever before to ensure that China receives the necessary support they need.  This is an opportunity for Atlas to mend relations with China by offering them support to aid their economy. The US can do this by lowering the trade difference between the two countries and giving aid to help them build infrastructure in return for human rights improvements.</p><br><p>South China Sea</p><p>Atlas will take a more aggressive stance in combating Chinese encroachment in the South China Sea via diplomatic channels. This will help de-escalate the issue militarily and prevent armed conflict between China and US allies.</p>'},
+					{title: 'Middle Eastern Allied Countries', content:'<p>Saudi Arabia</p><p>Atlas supports the new Saudi Arabian monarch, King Salman. We complement the nation on its recent progress in allowing women to vote and hold office and in ending certain practices of exploitive labor. Atlas will work to further improve human rights through external pressure and oversight. Atlas will continue its aid funding of $7 billion to Saudi Arabia mostly going to the military and small human rights organizations.</p><br><p>Egypt</p><p>Atlas will continue giving aid to the Egyptian military and humanitarian organizations and support to the al-Sisi government in its attempts to foster peace in the region. Atlas will push for greater tolerance of Muslims inside the country and attempt to stop religious persecution. US funding of Egypt will total to approximately $1.5 billion.</p><br><p>Turkey</p><p>Atlas will cut military relations with Turkey--noting its abuses of Kurds--to ensure the effective formation of a coalition government in Syria. However, Atlas will continue to fund Syrian refugee programs in the country.</p>'},
 				]
-
-				document.getElementById('foreignContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3><p>' + foreignData[chooser].content + '</p>'
+				
+				if(window.innerWidth <= 640){
+					document.getElementById('mPolicyContent').innerHTML = '<h3 style="font-size: 18px">' + foreignData[chooser].title + '</h3>' + '<span style="font-size: 12px">' + foreignData[chooser].content +'</span>'
+				}
+				else{
+					document.getElementById('foreignContent').innerHTML = '<h3>' + foreignData[chooser].title + '</h3>' + foreignData[chooser].content
+				}
 			}
+			
+			
+
+
+
+
+
+
+
+
 
 			function domesticPlatform(chooser){
 				var domesticData = [
-					{title: 'Russia', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Latin America', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Eastern Europe', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Israel/Palestine', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'ISIS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'Iraq & Afghanistan', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'India', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'China', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'North Korea', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
-					{title: 'AIDS', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'},
+					{title: 'Federal Jobs Program', content:'<p>Atlas will guarantee every American citizen a job in a federal jobs program. This program will act as an investment of human capital towards the improvement of America\'s aging infrastructure, the rejuvenation of American Industry, and a move towards a greener society. The job will provide the new minimum wage of $12/hour for 40 hours a week for 50 weeks a year totaling to $24,000/year. To fund this Atlas will commit $163.2 billion/year to provide approximately 6.8 million jobs. This means that Atlas will mandate that states cut unemployment benefits from their current duration of 26 weeks to 12 weeks. If states do not meet this mandate, they will not receive benefit from the infrastructure investment program. Those who participate in this program will also benefit from a $25 billion investment in workforce education so that they may seek higher paying employment in the private sector. They may receive training in areas such as environmental technologies, basic engineering, computer science, and material sciences, and basic data entry. This is designed to help the structurally unemployed and help modernize the American workforce.</p>'},
+					{title: 'Minimum Wage', content:'<p>Atlas will establish a federal minimum wage of $12/hour with a cost of living adjustment (COLA). However, in order to support small businesses--non-franchise businesses and corporations with under 500 employees--across America, the US government will provide small businesses with employment subsidies. These subsidies will provide a maximum value of $2/worker/hour and will raise the salary of every worker under minimum wage to the stated $12/hour.  For instance, a small business employing a worker at $11/hr will receive a subsidy equal to $1/hr for that employee, while a small business employing a worker $10/hr will receive $2/hr for the respective employee. Further, a small business employing a worker at $15/hr would receive no government subsidy. Over the next two years, Atlas will wean small businesses off of this subsidy, cutting every small business employment subsidy by 50% from 2016 to 2017 to a maximum of $1/worker/hour. No subsidies will be granted in 2018, yet a minimum wage of $12/hr will still be held in place. Overall, Atlas will allocate $40 billion to provide for these small business employment subsidies during the first year, and $20 billion the second year with no subsidies in following years.</p>'},
+					{title: 'Welfare', content:'<p>Atlas will cut corporate welfare by 35% to $60 billion, saving $32 billion.  $40 billion will be allocated to the aforementioned small business employment subsidies. The other $20 billion will be allocated to agricultural subsidies.</p><p>Atlas will continue funding the Child Tax Credit, SNAP, Housing Assistance, Pell Grants, Child Nutrition, and WIC. Atlas will allocate $160 billion to social welfare programs.</p>'},
+					{title: 'Infrastructure', content:'<p>In accordance with Atlas’s focus on delivering clean, affordable energy to Americans we will invest $75 billion into renewable energy infrastructure. This will break down into $25 billion for solar energy, $25 billion for wind energy and $25 billion for investment in other forms of renewable energy. Additionally Atlas will invest $250 million in tidal energy research and infrastructure.</p><p>To help keep American businesses competitive as well as keep American consumers connected to the ever increasing digital content that they crave, Atlas will invest $5 billion into improving the backbone of our internet infrastructure. In addition to this investment Atlas will create a public-private partnership with Cisco to pursue public WiFi in major metropolitan areas.</p><p>Atlas also acknowledges the crumbling state of our Interstate Highway System and the dangerous state of our bridges. To help rectify this we propose a 10 cent increase in the Gas Tax. This amounts to about $1.50 per tank of gas, which, in today\'s modern and fuel efficient vehicles, will last a month or more for a standard consumer. This will allow a $55 billion investment in America’s highway system as well as keep the Highway Trust Fund solvent.</p><p>In an effort to both save the environment and the lives of transit riders, Atlas will invest $11 billion in public transit. Much of this will focus on safety and maintenance funding on America’s aging public bus fleet. Currently 30% of buses fall below a 2.5 out of 5 on a safety and fuel efficiency scale, which Atlas finds unacceptable.</p><p>Atlas will meet AMTRAK requests for $220.6 million for research into new rail corridors and new technologies.</p><p>Atlas will invest in the vital network of inland waterways that move the American economy forward. To do this Atlas will invest a base of $800 million combined with a raise in the barge fuel tax. This tax increase has been requested by the shipping industry and they will be consulted in determining a new rate to meet the need for funding.</p><p>43% of Americans live in a county with a levi. Couple this with the fact that the average age of a levi is 52 years old it becomes apparent how important it is to invest in the maintenance and replacement of these structures. To do this Atlas will pledge $5 billion.</p><p>Dams are one of the most important pieces of infrastructure in which to invest. A dam failure could result in the loss of tens or even hundreds of thousands of lives. To prevent a catastrophe like this from occurring Atlas is proposing raising the current investment in dams by a factor of 134 to an annual amount of $1 billion. This will ensure all dams get the maintenance they need to maintain safe operation.</p><p>76% of all US trade travels by seaway. The sea shipping industry has requested full utilization of the Harbor Maintenance Taxes which Atlas will ensure. This means $1.6 billion a year will be invested in our ports to ensure that trade will continue to flow.</p><p>Clean drinking water is resource no human should be without. To ensure that all Americans have access to this basic asset Atlas will invest $4.4 billion in maintaining and strengthening the watermain system that currently lies beneath our cities. On top of this, Atlas will invest $1 billion in desalination technology. This brings total investment in water systems to $5.4 billion.</p><p>To help cities and counties maintain a functional wastewater systems expected in the first world, Atlas will invest $16.4 billion in expansion and maintenance as well as funding the Wastewater Trust Fund.</p><p>Atlas finds it unacceptable that 25% of Americans live within 3 miles of a hazardous waste site. In accordance with Atlas’s defined environmental goals, we will invest $1.1 billion in the cleanup of Superfund Sites and the funding of Brownfield Grants.</p><p>The Federal Aviation Association has requested $16 million in funding; $13 million of this is covered by the Airport Airway Trust Fund. Atlas will fund the remaining $3 million of their request.</p>'},
+					{title: 'Environment - Domestic', content:'<p>The most effective way to combat climate change is through Atlas’ innovative policy, ENERGIZE (Engage New Energy Resources for Growing and Initializing Zealous Expansion). Clean energy is one of Atlas’ top priorities, so changing the US’s power production is one of Atlas’ pillars. At the request of the Office of Energy Efficiency and Renewable Energy, Atlas will raise the agency’s budget from $2 billion to $4 billion to be used towards research of renewable resources, particularly nuclear fusion. As of now, solar and wind are the most beneficial renewable sources of energy that do not contribute to the greenhouse effect.</p><p>Next, the United States will transition the majority of power stations into natural gas, solar, and wind power plants through the allocation of of $30.6 billion. The States decide the most effective way to transition; however, they will be aided by the Federal government. The generous incentive programs allow the States to determine the exact magnitude of the transition but the transition itself must occur within seven years of the introduction of the program.</p><p>Atlas is hopeful that the enlarged investments on nuclear fusion will create substantial evidence on the future of energy. Nuclear fusion creates energy without releasing or making radioactive waste or carbon emissions. Since fusion can be powered by seawater, thirty million years of resources are at our disposal waiting to be used.</p><p>Although transportation is one of the predominant sources of greenhouse emissions, the Federal government’s role is very limited due to the constitutional rights of regulating transportation. However, Atlas will continue to uphold the current EPA regulations on private transportation vehicles.</p><p>Atlas will also issue rebates on electric automobiles built in the United States, allocating $5 billion to this cause. This will provide about a $6,000 rebate on every electric car sold in the US.</p><p>Across the United States, Atlas will prohibit point source pollution in major bodies of water that are endangered or have the possibility of becoming endangered within the next five years, using fines as the method of enforcement.</p><p>Atlas will create a national reforestation program modeled off that of Oregon’s. Landowners will have the option to lease portions of their land for 100 years to grow trees. These trees offset carbon emissions from industrial corporations, as well as create a natural filter for agricultural fertilizers. The people leasing land will benefit economically from this program because they will receive compensation from Atlas and will be able to grant hunting licenses. Atlas will allocate $500 million towards this program.</p>'},
+					{title: 'Foreign Climate Change', content:'<p>The United States recognizes the current climate treaty ratified at the Paris Peace Conference which sets reasonable limits on international carbon production to curb the effects of climate change. In order to ensure that other nations abide by the treaty ratified at the conference, Atlas will join with other developed nations in placing economic sanctions on nations that fail to fulfil the agreements.</p>'},
+					{title: 'Conventional Energy (Fossil Fuels, Coal, Nuclear, Biomass)', content:'<p>Atlas will cut subsidies to non-renewable energy sources excluding Nuclear energy, which Atlas will maintain at the current level of funding: $1.6 billion/year. The total savings from the cuts will be $3.521 billion.</p>'},
+					{title: 'Prison System Reforms', content:'<p>With the implementation of Criminal Justice Cost Reduction Act, Atlas will firstly be removing the national death penalty, as it poses an unnecessary moral and monetary burden to society. Atlas will also allocate a designated amount ranging from $500 million to $1 billion, depending on the state’s size, to the improvement of education, therapeutic sessions, community-based programs, and parole to each state to ensure that ex-prisoners are sufficiently and successfully reintroduced into society. Lastly, Atlas will pardon all currently incarcerated people being held on small-scale drug possession charges (more details can be found in our drug policy).</p><p>True prison reform extends beyond the prison walls to assist former convicts in reentering society and gaining the means to support themselves. Every year, 600,000 to 700,000 ex-convicts are reintroduced to society with little education and skills to support themselves, thus resulting in a return to crime. More than 40% of ex-convicts return to prison within four years of their release. Atlas will instate Required Reforms for the United States Prison System, which will remove death row and instate a life sentence for murderers who would have otherwise ended on death row. A certain amount depending on the state’s size, ranging from $1-2 billion will be allocated to the improvement of education, the gaining of skill sets, therapeutic sessions, community-based programs, and parole to ensure an ex-prisoner’s readjustment into society. The funding will remain at $75 billion annually to reform and maintain facilities and fund living expenses.</p>'},
+					{title: 'Drug Policy', content:'<p>In regards to drug related crimes Atlas will take an extended approach towards the legalization of marijuana in order to ensure a safe process that does not pose danger to public health. Atlas will allocate $1 billion towards researching the health effects of Marijuana over extended periods of time, determining at what age it is least harmful to cognitive development and developing technologies for effective enforcement of legal Marijuana laws. The process of legalization will take 10 years and happen in three stages. In the first year of this process, Atlas will legalize Marijuana for medicinal uses as prescribed by a licensed physician and decriminalize the small-scale possession of Marijuana. In the fifth year, Atlas will legalize small amounts of Marijuana for recreational purposes to people who meet the age that will not be significantly affected according to research conducted both privately and using government funds. In the tenth year, Atlas will legalize larger amounts for recreational use barring new medical research that shows extreme detriment to cognitive health. Certain restraints will be upheld to secure social safety such as prohibiting driving under the influence of Marijuana, smoking Marijuana in the presence of minors, the distribution of Marijuana without an approved license, and other common safety regulations.</p><p>Atlas will decriminalize first time small scale possession of all other drugs with the exception of date rape drugs. Atlas’ policies will reduce overcrowding and socioeconomic disparity within the prison system. We will legalize over the counter naloxone to prevent drug overdose deaths.</p><p>Atlas will establish a syringe-exchange program with $560 million obtained by cutting subsidies to fossil energy sources. This program will allow drug users to anonymously exchange used needles for new ones to prevent the spread of AIDS and other STDs through the sharing of contaminated needles.</p><p>Atlas will also create a national 911 Good Samaritan Law in order to protect the caller and overdoser from arrest for drug possession and use. Lives are needlessly lost as people are afraid to call 911, thus this law will prevent unnecessary death and improve the speed of emergency care. Those selling drugs or driving under the influence of drugs will not be protected under this law.</p>'},
+					{title: 'Tort Reform', content:'<p>Tort reform is a proposed policy that works toward limiting the amount of civil lawsuits and capping the amount of money the person filing the suit can receive from major corporations. Atlas seeks to reform the current civil lawsuit system by reducing the amount of cases involving medical malpractice or personal injury. In order to deter people from filing cases, Atlas will establish a “Loser Pays” rule meaning the losing party is to pay for the court fees for both parties.</p>'},
+					{title: 'Domestic Surveillance & Right to Informational Privacy', content:'<p>Atlas will increase video surveillance allocating $1 billion to VISION (Video Surveillance Information Organized Nationally).  With this act, the US will double the number of surveillance cameras in use, allowing for increased availability of footage.  This footage would be available to help the police catch criminals, thus deterring people from committing crimes.</p><p>Atlas will also pass the Mass American Protection Surveillance Act (MAPS Act) requiring court approval for all technological surveillance and creating more oversight of the current surveillance programs.  With this, NSA funding will be cut to $5 billion, reducing the overall power of the agency and thus the number of law abiding US citizens being illegally spied on.</p>'},
+					{title: 'Police Brutality', content:'<p>Police brutality has become an increasingly prevalent issue, sparking tension throughout the country. Atlas recognizes that a disproportionate number of African-American men have been targeted, and will allocate $200 million in an effort to rectify this situation. Each officer will be equipped with a mandatory microphone and camera. Officers with a record of bad behavior will be paired with an officer with no record in order to ensure decent behavior.</p>'},
+					{title: 'Pre-K and K-12 Public Education', content:'<p>The first step towards a stronger public education for the future generations of America is having a properly funded public education system. Atlas will be increasing the budget for Pre K and K-12 public education by $20 billion, bringing the total expenditures to $42 billion directed towards the betterment of public education. The new policy will be entitled COMPASS: Centralized Organization and Measurement of the Public American School System. One of the major divisions of the increased budget under COMPASS will be dedicated to the augmentation of public school teacher salaries.  Teachers will receive a twenty percent increase, based off of the average earnings of educators in the United States, which will lead to a higher quality in teachers and more people entering the field.  The federal government will cover half of this increase, and the other half will be covered by the states, making the average annual salary of an American public school teacher about $67,660/year. COMPASS will put the federal government in charge of determining a common curriculum and minimum standards for all schools in each state to reach. Another division of the increased budget under COMPASS will be allocated towards aid in the provision of Daycare and Pre-K education for all students under the Kindergarten age.</p>'},
+					{title: 'Higher Education Reform', content:'<p>Postsecondary education is absolutely necessary in today’s society in order to advance economically and remain competitive in the global market. Atlas will be enacting America’s College Promise, a proposal made by President Barack Obama which will make the first two years of community college or vocational training free for students who are responsible and dedicated to working hard. Atlas will allocate approximately $8 billion annually in order to enact America’s College Promise.</p><p>Atlas will also allocate $2.14 billion to Pell Grant Aid in order to raise the maximum amount of aid to $6,000 per student per year up from $5,775. Lastly, Atlas will provide $100 million in order to incentivize  grants for lowering tuition and improving colleges.</p>'},
+					{title: 'Agriculture', content:'<p>Atlas will continue to fund agricultural subsidies at approximately $20 billion per year. These subsidies create price floors on agricultural products ensuring stability in the availability of domestically produced food products.</p>'},
+					{title: 'Genetically Modified Organisms', content:'<p>Atlas is pro-Genetically Modified Organisms. The earth needs a way to sustain its ever growing population and scientific is something something to be embraced, not feared. Therefore, Atlas will encourage GMO research and development.</p>'},
+					{title: 'Finance Regulation', content:'<p>Atlas will allocate $1.7 billion to finance regulation. Atlas’ main objective is to ensure the public is not wronged in an economic viewpoint. If the economy takes a downfall, the correct entities will be held accountable and the public will not be impacted and expected to solely help rebuild the economy. Atlas will hold any companies who do not follow regulations accountable, and fines will be given to entities who do not follow the rules. Atlas will maintain the Security Exchange Commission in order to sustain the stock exchange and funding will be increased to fund enforcement of adequate ratings. Mortgage backed securities will now be fairly rated in order to notify investors of the true risk in which they may be participating. The Consumer Financial Protection Bureau, the Know Before You Owe Act, and the Credit Card Act will be maintained and expanded upon to allow investors and buyers to have further available information. In addition to these acts, a new act named Next Level will be created to ensure that there are higher standards for loan officers and for qualifications of loans. High interest mortgages will be eliminated and replaced with fair and clear mortgages to give homeowners a comprehensible view of what they can afford. The Federal Deposit Insurance Corporation will have more funding in order to ensure that citizens are insured and will not lose a majority of their money.</p>'},
+					{title: 'Corporate Regulations/Corporate Taxes', content:'<p>Atlas proposes to rewrite the current tax code and implement a three tiered corporate tax rate, with corporations earning a taxable income of less than $100,000 paying a 20% rate, a 32% rate for the next $900,000 of income and a 42% rate for any income beyond that. The federal government will encourage states to not levy their own corporate taxes in return for 12.5% of all federal revenue from corporate taxes distributed between the states, based on each state’s population. For corporate regulation, Atlas is going to institute federal regulations on paid maternity/family leave, equal pay for equal work, and speculative investment. A new mother or father, two weeks after the birth of a child, may select a leave program of either full wages for 3 months after the birth of the child or half wages for 6 months after birth of the child. Corporations must also offer up to 3 weeks of paid family leave per year, which can be extended to 6 weeks at half wages upon request. In addition, all workers at the same level in a company must be paid comparable wages, with no more than a 3 % discrepancy between gender and race groups. The prohibition of joining or cooperation of investment banks and commercial banks will be reinstated under the Glass-Steagall Act.</p>'},
+					{title: 'Freedom of the Internet & Intellectual Property Rights', content:'<p>Atlas will amend the “Safe-harbor” provisions of the Digital Millennium Copyright Act (DMCA) so that no online service is required to block/remove infringing material, rather, it is the copyright holder’s responsibility to seek the original uploader and sue/enjoin him/her directly. Additionally, Atlas will shorten the duration of a copyright to an author’s life span or to within 50 years of his/her death.</p><p>Atlas will reform patent law to ensure that claimed inventions actually work and accomplish their claimed purpose.  Atlas will also implement measures to prevent frivolous lawsuits that discourage invention and innovation, which violate the Copyright Clause of the Constitution.</p><p>Furthermore, Atlas will ensure a free and open internet devoid of censorship by either government agencies or corporations, and encourage broadband investment through the National Broadband Plan.</p><p>Lastly, Atlas will allocate $5 billion per year for upgrades to our current information infrastructure, in order to remain competitive with Europe, Japan and Korea.</p>'},
+					{title: 'Health Care', content:'<p>The current cost of all medical services--hospitals ($971.8 billion), physicians and health professionals($603.7 billion), prescription drugs ($297.7 billion)--in America totals to $1.8732 trillion per year.  With the streamlining of hospital billing systems, reduction in prescription drug costs, elimination of unnecessary and frivolous procedures, and elimination of health system bureaucrats, America would be able to reduce its overall medical expenditures by 36%, creating a new total of $1.1986 trillion. Additionally, Atlas will illegalize prescription drug advertising, as the United States and New Zealand are currently the only two nations that still allow this. Atlas will encourage medical corporations to transfer the money saved from this illegalization to research and development. Atlas intends to make these changes by establishing a single-payer healthcare system.  This would lead to a cost of approximately $4699.15 per year per US citizen before inputting a bracketed premium system.  Without employer coverage, the current cost of health insurance in America is approximately $6025 for individuals or on average $16834 for family coverage.  $4699.15 is already a significant reduction in cost for many Americans.  Instituting a tiered system of payment will ensure basic and affordable health coverage to each and every American citizen.</p><p>In order to ensure that employers currently offering health insurance coverage do not pocket the money saved on these now unnecessary health coverage payments, Atlas will pass the Deferred Compensation Act.  This act will illegalize the aforementioned pocketing of money and ensure that workers receive the monetary compensation that they were previously receiving as health insurance benefits.</p><p>In part, this program will be funded by a bracketed payroll tax.  The bottom 50% of Americans will pay 2% of their paycheck, the upper 50%-25% will pay 4%, the upper 25%-10% will pay 6%, and the top 10% of Americans will pay 8% for a total revenue of $826.259 billion. The rest of the expenses will be covered by minimal copays of $15 per usage of coverage and a small percentage of income tax revenue.</p>'},
+					{title: 'Disabilities and Age Discrimination', content:'<p>In order to maximize the amount of aid that the United States can provide to the disabled and elderly while minimizing the cost, it is important that the policy becomes more organized and exclusive. The current system was initiated under the Americans with Disabilities Act (ADA), which is aimed at prohibiting discrimination against the disabled in public life. To create more specific standards of disability, the definition of disability will be reworked to have stricter boundaries. Categorizing the definition of “disability” would have many positive effects; for example, reducing vagueness in the process of applying for aid, providing more specialized help that deals with symptoms, and ensuring that people with disorders that affect multiple aspects of their life are given more financial assistance.</p>'},
+					{title: 'Social Security', content:'<p>At present, the wage base prevents someone from paying Social Security taxes over $7,347. Atlas will eliminate the wage base, which means that American laborers will pay an increased SS payroll tax. This tax will be increased from 6.2 percent to 7 percent with the self-employed paying 13 percent. Atlas will continue funding Old-Age and Survivors Insurance at $785 billion, Disability Insurance at $148 billion, and Supplemental Security Income at $64 billion.</p>'},
+					{title: 'NASA', content:'<p>Atlas will increase funding to NASA for research on Mars creating a new total of $25 billion. Atlas is establishing the goal to put a man on Mars by 2035.</p>'},
+					{title: 'Cancer', content:'<p>In order to strengthen the international fight against cancer, Atlas will increase funding for cancer research to $7 billion per year.</p>'},
+					{title: 'Stem Cell', content:'<p>Atlas will increase stem cell research funding to $20 million. This will give scientists the opportunity to discover new treatments for people suffering from spinal cord injuries, type 1 diabetes, Parkinson\'s disease, Alzheimer\'s disease, heart disease, stroke, burns, cancer and osteoarthritis.</p>'},
+					{title: 'LGBTQ+', content:'<p>Atlas will sustain the Supreme Court decision in Obergefell v. Hodges ensuring that it remains legal for two people of the same gender to bind themselves in a legal marriage. Atlas will also be instating legislation that requires all public education facilities to include a unit explaining gender identity, sexuality, and the difference between consent and rape. This program will consist of one unit in high-school health classrooms and align itself with Atlas’ national common core education policy. Atlas will allocate $1 billion to implement this new program.</p>'},
+					{title: 'Equal Pay/Equal Work', content:'<p>In our current day society, women, the disabled, and people of color make a mere fraction of what the able-bodied white man makes. Atlas will pass the Paycheck Fairness Act -a comprehensive approach. It will give incentive to employers to comply with equal pay bills by prohibiting the punishment of employees for discussing their wages. Additionally, this act will order more comprehensive research about pay inequality, require employers to provide a just, business related reason for paying an employee lower wages, and raise the penalty and required compensation for discrimination.  Atlas will pass another piece of legislation call the Equal Employment Opportunity Restoration Act of 2012 -Removing Barriers to Workers Banding Together to Fight Back Against Pay Discrimination, which will make it easier for Americans to take their case to the supreme court and for workers to come together. This proposal will subsidize government agencies, giving them the ability to develop new tools that would aid them in performing more comprehensive research on the wage gap and its many causes. Atlas will allocate $15 billion to ensuring equal pay and equal work throughout America.</p><p>Atlas will allocate $500 million of this $15 billion to the creation of an organization called PAID (Protecting And Including the Disabled, Women, and Minorities.) that will actively help women, people of color and the disabled achieve pay equity. PAID will perform further comprehensive research on intersectional pay disparity. It will provide legal advocates for those who are experiencing pay disparity. In addition to providing research and legal aid, PAID will offer programs for women, people of color and the disabled that teach those at a disadvantage how to negotiate for higher wages and how to stand up for themselves in everyday work related situations. Finally, PAID will advocate for equal paid parental leave and accessible child care programs because of the influence that motherhood currently has on the wage gap.</p>'},
+					{title: 'Affirmative Action', content:'<p>The current policy for affirmative action is the most effective option; thus, Atlas will continue it. This method creates a malleable policy able to encourage full integration and diversity even in an unpredictable society and without reliance on the unlikely support of a vote-driven legislature. The process of going through executive orders and Supreme Court cases acts as a shaping mechanism for affirmative action, refining it to the times.</p>'},
+					{title: 'Abortion', content:'<p>Our healthcare program will fund sex education and the distribution of contraceptives so women may continue to exercise autonomy and get the information they need in order to avoid unwanted pregnancies. This program will largely reduce the need for abortions, but unfortunately not completely eliminate it. Atlas will pass an act legalizing abortions in the first and second trimester and repeal the Hyde Amendment. Atlas’ single-payer system will provide funding for easily accessible abortions during the first trimester, legalize second trimester abortions and leave third trimester regulations up to the states. The more expensive an abortion is, the more difficult it is to receive, and the more women there are that will be forced to either attempt dangerous, illegal abortions, or the more children that will end up in the already overrun foster care systems across the country. As of the year 2013, the number of kids in foster care that aged out of the system without ever finding a permanent home was over twenty ­three thousand. Kids in this situation are more likely to become homeless, unemployed, and face jail time. Once again, children of color are disproportionately represented by these numbers.</p>'},
+					{title: 'Physician Assisted Suicide', content:'<p>Atlas intends to nationalize the Death with Dignity Act. The requirements in order to be able to legally participate in the Death with Dignity include the following: the patient must be an adult (eighteen years or above), they must be an established citizen of the United States of America, the patient must be of a sound, capable mind at the time of their decision (as decided by a trained psychiatrist), and they must be predicted to succumb to their terminal illness within the time period of six months. The process under this act begins with an oral request, and once it is verified that the patient in question meets the aforementioned prerequisites, a second oral request is necessary fifteen days after the first request was issued. Then, the patient must file a written request with two witnesses present for their signature. Once this request is approved, the patient waits for their doctor to write them the necessary prescription, and forty-eight hours later, the patient may retrieve the medication. The patient may revoke their decision at any point during the process.</p>'},
+					{title: '2nd Amendment Rights', content:'<p>Atlas will strengthen the background checks necessary to obtain a firearm by mandating a psychiatric exam. Moreover, felons will not be allowed to purchase guns or firearms. Intensive background checks are crucial to help ensure that the potential purchaser of a weapon is fully aware of the dangers it brings, the consequences that may come, and will prevent those that are not healthy, or fit to be in possession of a firearm from possessing one.</p><p>Restricting the availability of Title I and Title II dealer licenses keep guns from being sold to those who do not  have intentions of using them for sport.  This will eliminate the sale of firearms from all venues other than designated gun stores and sporting goods stores.  This policy does not infringe on an individual’s right to bear arms.</p><p>High capacity magazines (containing more than 10 rounds), stock modifications, and fore grip modifications have no purpose in existing in a non-military capacity. Atlas will prohibit weapon modifications that serve only to increase lethality and contribute to the mass killings that plague the country.</p><p>High excise taxes on ammunition not purchased and used at a gun range will be implemented in order to decrease the total amount sold.  These taxes will include a 300% tax on military grade ammunition, a 500% tax on side arm ammunition, no tax on .22SR rounds and .17HMR rounds as well as shotgun shells, and a 100% on all other unmentioned ammunition.</p><p>Additionally in an effort to increase the accountability of firearm owners, all new weapons will be ballistically fingerprinted before sale to the distributer. While the technology to operate this system at optimal efficiency is still in the beginning phases of production, Atlas will invest the sum of $25 million in research and development to quickly make technology viable. The cost of this program to firearms manufacturers will be minimal as a similar program in Maryland cost just under $17 a weapon using expensive, outdated manual technologies versus newer, cheaper digital methods.</p>'},
+					{title: 'Campaign Finance Reform', content:'<p>In order to enact meaningful campaign finance reform, our current situation needs to be attacked from two different angles. The first thing needed to enact meaningful reform is the overturning of the outcomes of the Citizens United decision and other related court decisions in the form of a constitutional amendment. The first thing the amendment needs to do is allow states and Congress the ability to set and regulate reasonable limits on the raising/spending of money being used by candidates and other people/entities influencing elections. Another provision in the amendment would be granting the states and Congress the ability to distinguish people and corporations in terms of campaign spending. It is important to note this provision does not give the states or Congress the ability to attack corporate personhood as a whole. To supplement the constitutional amendment, an equally important component is the enactment of publicly financed federal elections. This would be a “Clean Election” system, a system where candidates receive government grants in exchange for limits on spending and private fundraising. Studies of the “Clean Election” systems have found that candidates are more likely to be involved and interacting with their constituents in the election season as well as that this system increases voter participation where they exist, which is a widespread problem in our federal elections. Atlas will pass the Fair Elections Now Act. Under the Fair Elections Now Act, the qualification and funding provisions are as follow:</p><ol><li>Candidates would need to raise a large, set number of contributions to qualify for public funding, with each contribution being maxed at $100.</li><li>Candidates for the House of Representatives would need to collect at least 1,500 individual contributions from citizens of their state, and raise at least $50,000.</li><li>Candidates for the Senate would need to collect at least 2,000 individual contributions plus an additional 500 individual contributions for each congressional district in their state. Candidates would also need to raise at least 10% of the amount the Fair Elections funding would provide candidates for that given election cycle.</li></ol><p></p><p>The act will require a little less than a $1 billion each year to pay for all of the congressional elections, which is a small price to pay for such a complete overhaul as proposed. Atlas will commit this funding in order to give the political power back to the people. Candidates will no longer be forced to focus their efforts on a few “big money” sources, but rather on the expansive, low budget voting population. The proposal also levels the playing field for candidates that may not have the “corporate” or “establishment” support, as the support needed to be involved in an election would now come directly from the people.</p>'},
+					{title: 'Voting Day', content:'<p>Atlas will make all Federal elections Federal Holidays. This will increase voter participation from approximately 55%. We will invest $250 million a year in a fund to make this possible.</p>'},
 				]
 
+				if(window.innerWidth <= 640){
+					document.getElementById('mPolicyContent').innerHTML = '<h3 style="font-size: 18px">' + domesticData[chooser].title + '</h3>' + '<span style="font-size: 12px">' + domesticData[chooser].content +'</span>'
+				}
+				else{
+					document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3>' + domesticData[chooser].content
 
-				document.getElementById('domesticContent').innerHTML = '<h3>' + domesticData[chooser].title + '</h3><p>' + domesticData[chooser].content + '</p>'
+				}
 			}
 
 			var staffInfoOn = 0;
@@ -617,6 +841,7 @@
 				}
 
 			}
+			
 
 		</script>
 	</body>
