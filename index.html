@@ -134,7 +134,7 @@
 
 
 
-		<section id="staff">
+		<section id="staff" style="padding-bottom: 0px;">
 			<div class="container" style="padding: 0; margin: 0; width: 100%">
 				<div id="staffRow" class="row mStaffRow" style="padding-left: 0px; padding-right: 0px">
 				<!-- Need to make sure to change padding to 0 when on desktop -->
@@ -482,13 +482,14 @@
 
 
 			function openForeign(){
-
+				//document.getElementsByTagName("body")[0].style = 'overflow-y: hidden';
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mDomesticSelect').style.display = 'none';
 					document.getElementById('mForeignSelect').style.display = 'block';
 					document.getElementById('mPolicyTitle').innerHTML = 'Foreign Policy';
 					document.getElementById('mPolicyContent').innerHTML	= '<p>Atlas will maintain the current troop strength of 10,000 active soldiers to train and equip the Afghan military. These soldiers will not take on aggressive combat operations. Atlas will continue with all other current military funding and humanitarian aid to the region as well while increasing infrastructure aid, focusing particularly on Afghanistan’s failing health systems. Overall, Afghanistan funding will total to $17.7 billion. We will attempt to help the people in the region by offering medical coverage through military operations and offering aid to privately build hospitals and train health professionals. The fall of Kunduz to the taliban is a demonstration that we cannot ignore, as the fight is not yet over, and the Afghan army is beginning to have the necessary skills to fight back.  It is important to understand, however,  that no amount of military strength can defeat the Taliban. Only concerted social efforts and development of infrastructure can lead to their ultimate defeat.  Only when people feel that the Afghan government and western intervention have helped improve their lives will the Taliban lose the support of their followers.</p>';
+
 				}
 				else{
 					$("#policyCover").fadeIn();
@@ -547,6 +548,7 @@
 			}
 
 			function openDomestic(){
+				//document.getElementsByTagName("body")[0].style = 'overflow: hidden';
 				if(window.innerWidth <= 640){
 					$("#mDomesticScreen").fadeIn();
 					document.getElementById('mForeignSelect').style.display = 'none';
